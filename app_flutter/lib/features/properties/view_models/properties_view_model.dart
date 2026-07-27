@@ -59,6 +59,18 @@ class PropertiesViewModel extends ChangeNotifier {
       }
     }
 
+    if (_currentType != null && _currentType!.typeName == 'ReferenceFrame') {
+      final astronomicalBody = data['astronomical_body'] as String?;
+      if (astronomicalBody != null) {
+        final normalized = GeoLocationService.normalizeAstronomicalBody(astronomicalBody);
+        final validationError = GeoLocationService.validateAstronomicalBody(normalized);
+        if (validationError != null) {
+          return validationError;
+        }
+        data['astronomical_body'] = normalized;
+      }
+    }
+
     await _dataSource.saveProperties(nodeId, data);
     return null;
   }

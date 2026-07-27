@@ -1,0 +1,4580 @@
+[
+  {
+    "name": "国道NTT",
+    "operator": "NTT",
+    "latitude": 40.8232978,
+    "longitude": 140.7503634
+  },
+  {
+    "name": "NTT東日本飯能緑町電話交換所",
+    "operator": "NTT",
+    "latitude": 35.8531756,
+    "longitude": 139.3298997
+  },
+  {
+    "name": "NTT瀬田前",
+    "operator": "NTT",
+    "latitude": 35.6181937,
+    "longitude": 139.626029
+  },
+  {
+    "name": "NTT甲府支店西",
+    "operator": "NTT",
+    "latitude": 35.6608225,
+    "longitude": 138.5724577
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 24.3424146,
+    "longitude": 124.1543772
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 33.5444481,
+    "longitude": 130.4619739
+  },
+  {
+    "name": "NTT渋谷前",
+    "operator": "NTT",
+    "latitude": 35.6516172,
+    "longitude": 139.7041546
+  },
+  {
+    "name": "NTT南局前",
+    "operator": "NTT",
+    "latitude": 36.6814747,
+    "longitude": 137.2366087
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7048503,
+    "longitude": 139.5798226
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7033569,
+    "longitude": 139.5788071
+  },
+  {
+    "name": "NTT希望ヶ丘",
+    "operator": "NTT",
+    "latitude": 35.4618644,
+    "longitude": 139.5114218
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 36.6743842,
+    "longitude": 136.8681352
+  },
+  {
+    "name": "NTT小笠原北",
+    "operator": "NTT",
+    "latitude": 35.6194779,
+    "longitude": 138.4648227
+  },
+  {
+    "name": "NTT東日本札幌病院",
+    "operator": "東日本電信電話",
+    "latitude": 43.0558424,
+    "longitude": 141.3344281
+  },
+  {
+    "name": "鹿島NTT前",
+    "operator": "NTT",
+    "latitude": 35.961876,
+    "longitude": 140.635629
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 36.5374547,
+    "longitude": 140.5294505
+  },
+  {
+    "name": "NTT柳井支店前",
+    "operator": "NTT",
+    "latitude": 33.9653364,
+    "longitude": 132.1107071
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 32.019024,
+    "longitude": 130.194179
+  },
+  {
+    "name": "大崎郵便局ＮＴＴ東日本関東病院内分室",
+    "operator": "NTT",
+    "latitude": 35.631017,
+    "longitude": 139.725482
+  },
+  {
+    "name": "東日本電信電話株式会社",
+    "operator": "NTT",
+    "latitude": 35.683423,
+    "longitude": 139.687889
+  },
+  {
+    "name": "ＮＴＴ日比谷ビル内郵便局",
+    "operator": "NTT",
+    "latitude": 35.671099,
+    "longitude": 139.757656
+  },
+  {
+    "name": "ＮＴＴ東日本伊豆病院",
+    "operator": "NTT",
+    "latitude": 35.090013,
+    "longitude": 138.9554277
+  },
+  {
+    "name": "広島ＮＴＴ基町ビル内郵便局",
+    "operator": "NTT",
+    "latitude": 34.397632,
+    "longitude": 132.456619
+  },
+  {
+    "name": "NTT 西日本松山病院",
+    "operator": "NTT",
+    "latitude": 33.843701,
+    "longitude": 132.773435
+  },
+  {
+    "name": "ＮＴＴ西日本北九州病院",
+    "operator": "NTT",
+    "latitude": 33.887351,
+    "longitude": 130.901483
+  },
+  {
+    "name": "ＮＴＴ西日本九州病院",
+    "operator": "NTT",
+    "latitude": 32.801067,
+    "longitude": 130.718274
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6666239,
+    "longitude": 138.5691456
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 34.9883169,
+    "longitude": 133.4605143
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 36.3186401,
+    "longitude": 139.1978382
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.9383964,
+    "longitude": 140.5466896
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.9856102,
+    "longitude": 140.4895069
+  },
+  {
+    "name": "NTT 若松営業所 二島分局",
+    "operator": "NTT",
+    "latitude": 33.8911307,
+    "longitude": 130.767468
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.4318097,
+    "longitude": 139.4106549
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.431918,
+    "longitude": 139.4102092
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.43209,
+    "longitude": 139.409513
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.9973876,
+    "longitude": 138.1426388
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.9986399,
+    "longitude": 138.1431585
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.703706,
+    "longitude": 139.5606279
+  },
+  {
+    "name": "小浜ＮＴＴ前",
+    "operator": "NTT",
+    "latitude": 35.4993051,
+    "longitude": 135.7461386
+  },
+  {
+    "name": "NTT電波塔",
+    "operator": "NTT",
+    "latitude": 34.9502825,
+    "longitude": 138.3548617
+  },
+  {
+    "name": "NTT電波塔",
+    "operator": "NTT",
+    "latitude": 34.9585307,
+    "longitude": 138.3532068
+  },
+  {
+    "name": "NTT東日本上中島ビル",
+    "operator": "NTT",
+    "latitude": 39.2662115,
+    "longitude": 141.8482356
+  },
+  {
+    "name": "NTT 安倍無線中継局",
+    "operator": "NTT",
+    "latitude": 35.065998,
+    "longitude": 138.2874892
+  },
+  {
+    "name": "NTT荒川前",
+    "operator": "NTT",
+    "latitude": 35.7354408,
+    "longitude": 139.787435
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 35.7378366,
+    "longitude": 139.327122
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 26.438728,
+    "longitude": 127.8021718
+  },
+  {
+    "name": "NTT金山ビル前公衆",
+    "operator": "NTT",
+    "latitude": 35.1447925,
+    "longitude": 136.9000811
+  },
+  {
+    "name": "NTTミニショップ",
+    "operator": "NTT",
+    "latitude": 35.6872668,
+    "longitude": 139.5971731
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6874147,
+    "longitude": 135.5507858
+  },
+  {
+    "name": "NTTカードソリューション",
+    "operator": "NTT",
+    "latitude": 35.669079,
+    "longitude": 139.725426
+  },
+  {
+    "name": "NTT大森",
+    "operator": "京浜急行バス",
+    "latitude": 35.5872215,
+    "longitude": 139.7315776
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.131513,
+    "longitude": 140.0838561
+  },
+  {
+    "name": "NTT東日本 南古谷電話交換センター",
+    "operator": "NTT",
+    "latitude": 35.9024038,
+    "longitude": 139.5185908
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.4549513,
+    "longitude": 139.6301061
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7026905,
+    "longitude": 139.7761707
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.465288,
+    "longitude": 139.6200662
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6905033,
+    "longitude": 139.7041382
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.703049,
+    "longitude": 135.546082
+  },
+  {
+    "name": "NTTドコモ東海 本宮山無線中継所",
+    "operator": "NTT",
+    "latitude": 34.909868,
+    "longitude": 137.4208282
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.3176959,
+    "longitude": 140.6327578
+  },
+  {
+    "name": "NTT大森",
+    "operator": "京浜急行バス",
+    "latitude": 35.5865433,
+    "longitude": 139.7319506
+  },
+  {
+    "name": "ＮＴＴ北分局前",
+    "operator": "NTT",
+    "latitude": 35.6780082,
+    "longitude": 138.5544683
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.61449,
+    "longitude": 139.627532
+  },
+  {
+    "name": "NTT東日本岩見沢支店",
+    "operator": "NTT",
+    "latitude": 43.2011119,
+    "longitude": 141.7664742
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6978016,
+    "longitude": 139.7603133
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6836682,
+    "longitude": 139.5596113
+  },
+  {
+    "name": "NTTdocomo東北支社",
+    "operator": "NTT",
+    "latitude": 38.2698868,
+    "longitude": 140.8739382
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6720542,
+    "longitude": 133.9113646
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6885077,
+    "longitude": 139.5669273
+  },
+  {
+    "name": "JR西日本奈良三条ビル",
+    "operator": "NTT",
+    "latitude": 34.681893,
+    "longitude": 135.824998
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7229371,
+    "longitude": 135.5497665
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6982087,
+    "longitude": 135.5033866
+  },
+  {
+    "name": "NTT中継局",
+    "operator": "NTT",
+    "latitude": 41.8759359,
+    "longitude": 140.9465037
+  },
+  {
+    "name": "NTT東日本北海道千歳ビル",
+    "operator": "NTT",
+    "latitude": 41.7733707,
+    "longitude": 140.7395509
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 41.7889742,
+    "longitude": 140.7620157
+  },
+  {
+    "name": "NTT背炙山無線中継所",
+    "operator": "NTT",
+    "latitude": 37.4788242,
+    "longitude": 139.9827588
+  },
+  {
+    "name": "NTTデータビル前",
+    "operator": "小田急バス",
+    "latitude": 35.687556,
+    "longitude": 139.5687762
+  },
+  {
+    "name": "NTTデータビル前",
+    "operator": "小田急バス",
+    "latitude": 35.6878418,
+    "longitude": 139.5689773
+  },
+  {
+    "name": "NTT東日本関東病院タニタ食堂",
+    "operator": "NTT",
+    "latitude": 35.6318985,
+    "longitude": 139.7254729
+  },
+  {
+    "name": "NTT深山無線中継所",
+    "operator": "NTT",
+    "latitude": 34.9707804,
+    "longitude": 134.8091935
+  },
+  {
+    "name": "NTT LePerk 小杉陣屋町",
+    "operator": "NTT",
+    "latitude": 35.583326,
+    "longitude": 139.658096
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6943215,
+    "longitude": 139.5613669
+  },
+  {
+    "name": "NTTドコモ 松崎基地局",
+    "operator": "NTT",
+    "latitude": 33.6366968,
+    "longitude": 130.4441284
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 33.6487306,
+    "longitude": 130.4254193
+  },
+  {
+    "name": "NTT本郷局前",
+    "operator": "NTT",
+    "latitude": 35.3692143,
+    "longitude": 139.5639146
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.665264,
+    "longitude": 135.496332
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.081131,
+    "longitude": 141.307631
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.081304,
+    "longitude": 141.306837
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 42.3444724,
+    "longitude": 141.0301402
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 36.2373376,
+    "longitude": 137.9699587
+  },
+  {
+    "name": "NTT東日本・勝沼無線中継所",
+    "operator": "NTT",
+    "latitude": 35.6495671,
+    "longitude": 138.7212006
+  },
+  {
+    "name": "NTTドコモ 奈多基地局",
+    "operator": "NTT",
+    "latitude": 33.6896934,
+    "longitude": 130.4079061
+  },
+  {
+    "name": "ＮＴＴ大船渡",
+    "operator": "NTT",
+    "latitude": 39.069846,
+    "longitude": 141.7195817
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7128536,
+    "longitude": 139.7920868
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6498834,
+    "longitude": 139.9036642
+  },
+  {
+    "name": "NTT中央研修センタ AED",
+    "operator": "NTT",
+    "latitude": 35.6508004,
+    "longitude": 139.5884369
+  },
+  {
+    "name": "NTT伯方",
+    "operator": "NTT",
+    "latitude": 34.2033698,
+    "longitude": 133.110778
+  },
+  {
+    "name": "NTT研修センター前",
+    "operator": "NTT",
+    "latitude": 33.8364233,
+    "longitude": 132.7377185
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.816145,
+    "longitude": 135.648006
+  },
+  {
+    "name": "NTT東日本 神奈川支店",
+    "operator": "NTT",
+    "latitude": 35.4435519,
+    "longitude": 139.6427383
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.161399,
+    "longitude": 141.413348
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.0662656,
+    "longitude": 141.347764
+  },
+  {
+    "name": "NTT中央研修センタ",
+    "operator": "小田急バス",
+    "latitude": 35.6505907,
+    "longitude": 139.5885565
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.074893,
+    "longitude": 141.296016
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.067643,
+    "longitude": 141.274229
+  },
+  {
+    "name": "NTT御所",
+    "operator": "NTT",
+    "latitude": 34.4649273,
+    "longitude": 135.737724
+  },
+  {
+    "name": "NTTデータカスタマー",
+    "operator": "NTT",
+    "latitude": 36.3774128,
+    "longitude": 140.4694164
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.741877,
+    "longitude": 136.947447
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.445958,
+    "longitude": 137.019196
+  },
+  {
+    "name": "NTTドコモ",
+    "operator": "NTT",
+    "latitude": 37.422941,
+    "longitude": 140.3516437
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.707605,
+    "longitude": 139.772868
+  },
+  {
+    "name": "NTTデータルウィーブ",
+    "operator": "NTT",
+    "latitude": 35.9528489,
+    "longitude": 139.6664989
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6611737,
+    "longitude": 135.5576237
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6895639,
+    "longitude": 135.526578
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.6015143,
+    "longitude": 141.0223522
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7837052,
+    "longitude": 139.0299334
+  },
+  {
+    "name": "NTTドコモ鯨山中継局",
+    "operator": "NTT",
+    "latitude": 39.4003926,
+    "longitude": 141.9177101
+  },
+  {
+    "name": "NTT西日本　橋本別館",
+    "operator": "NTT",
+    "latitude": 34.3143649,
+    "longitude": 135.609275
+  },
+  {
+    "name": "NTT西日本　東家別館",
+    "operator": "NTT",
+    "latitude": 34.3131599,
+    "longitude": 135.6087609
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.702675,
+    "longitude": 135.5624
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.702892,
+    "longitude": 135.564727
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.70305,
+    "longitude": 135.569342
+  },
+  {
+    "name": "NTT岡山前",
+    "operator": "NTT",
+    "latitude": 34.6632082,
+    "longitude": 133.9264179
+  },
+  {
+    "name": "NTT-アンテナ",
+    "operator": "NTT",
+    "latitude": 34.8912452,
+    "longitude": 139.036261
+  },
+  {
+    "name": "NTT岡山前",
+    "operator": "NTT",
+    "latitude": 34.6629743,
+    "longitude": 133.9260612
+  },
+  {
+    "name": "NTT岡山前",
+    "operator": "NTT",
+    "latitude": 34.6632333,
+    "longitude": 133.9260638
+  },
+  {
+    "name": "ＮＴＴ西日本兵庫支店但馬別館",
+    "operator": "NTT",
+    "latitude": 35.5420691,
+    "longitude": 134.8171682
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6983542,
+    "longitude": 135.5600928
+  },
+  {
+    "name": "NTT docomo",
+    "operator": "NTT docomo",
+    "latitude": 35.022963,
+    "longitude": 137.0883736
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.627857,
+    "longitude": 139.448368
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6231045,
+    "longitude": 139.4443515
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.62203,
+    "longitude": 139.448439
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.621301,
+    "longitude": 139.447919
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT ",
+    "latitude": 35.621736,
+    "longitude": 139.454109
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6207542,
+    "longitude": 139.453825
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 36.3177156,
+    "longitude": 139.8075803
+  },
+  {
+    "name": "NTTドコモ豊田高岡本町無線局",
+    "operator": "NTT",
+    "latitude": 35.0355248,
+    "longitude": 137.0793849
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6394724,
+    "longitude": 135.538722
+  },
+  {
+    "name": "NTT大森",
+    "operator": "京浜急行バス",
+    "latitude": 35.5873824,
+    "longitude": 139.7318651
+  },
+  {
+    "name": "NTT前",
+    "operator": "日光交通",
+    "latitude": 36.8326542,
+    "longitude": 139.7165299
+  },
+  {
+    "name": "NTT前",
+    "operator": "日光交通",
+    "latitude": 36.8324524,
+    "longitude": 139.716589
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.706748,
+    "longitude": 135.565527
+  },
+  {
+    "name": "NTT東日本 相馬交換所",
+    "operator": "NTT",
+    "latitude": 40.587143,
+    "longitude": 140.399528
+  },
+  {
+    "name": "NTTドコモ",
+    "operator": "ドコモショップ",
+    "latitude": 34.8835811,
+    "longitude": 136.5848024
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "NTT",
+    "latitude": 34.8809094,
+    "longitude": 136.5851254
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7705973,
+    "longitude": 138.0142349
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.635247,
+    "longitude": 139.4434658
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 32.5817171,
+    "longitude": 131.6670691
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9571806,
+    "longitude": 137.1671518
+  },
+  {
+    "name": "NTT北",
+    "operator": "栃木市ふれあいバス",
+    "latitude": 36.3777276,
+    "longitude": 139.7341856
+  },
+  {
+    "name": "NTT北",
+    "operator": "栃木市ふれあいバス",
+    "latitude": 36.3778023,
+    "longitude": 139.7341629
+  },
+  {
+    "name": "NTT　交換機",
+    "operator": "NTT",
+    "latitude": 43.2302432,
+    "longitude": 143.2931095
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7030391,
+    "longitude": 135.6347653
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7223011,
+    "longitude": 139.6742332
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 33.748058,
+    "longitude": 129.689912
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2426035,
+    "longitude": 140.9089403
+  },
+  {
+    "name": "NTTDOCOMO",
+    "operator": "NTT",
+    "latitude": 38.2759322,
+    "longitude": 140.8678459
+  },
+  {
+    "name": "NTT東日本関東病院",
+    "operator": "NTT東日本",
+    "latitude": 35.6312558,
+    "longitude": 139.7256288
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2542392,
+    "longitude": 140.8974716
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.249536,
+    "longitude": 140.9025306
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.249186,
+    "longitude": 140.9096622
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2455736,
+    "longitude": 140.9095308
+  },
+  {
+    "name": "NTTDOCOMO",
+    "operator": "NTT",
+    "latitude": 38.3081053,
+    "longitude": 140.8309344
+  },
+  {
+    "name": "NTTdocomo",
+    "operator": "NTT",
+    "latitude": 38.046232,
+    "longitude": 140.7185234
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2517041,
+    "longitude": 140.9186167
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1946404,
+    "longitude": 140.8826319
+  },
+  {
+    "name": "亀田NTT前",
+    "operator": "NTT",
+    "latitude": 37.8649754,
+    "longitude": 139.1103323
+  },
+  {
+    "name": "亀田NTT前",
+    "operator": "NTT",
+    "latitude": 37.8646959,
+    "longitude": 139.1107749
+  },
+  {
+    "name": "NTT交換所",
+    "operator": "NTT",
+    "latitude": 34.8665155,
+    "longitude": 137.0968657
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7551652,
+    "longitude": 139.6494327
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2538806,
+    "longitude": 140.9029521
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2398608,
+    "longitude": 140.869198
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT",
+    "latitude": 34.6853434,
+    "longitude": 135.506705
+  },
+  {
+    "name": "NTT基地局",
+    "operator": "NTT",
+    "latitude": 32.4631506,
+    "longitude": 139.7605581
+  },
+  {
+    "name": "NTT 宇治支局",
+    "operator": "NTT 西日本",
+    "latitude": 34.8881105,
+    "longitude": 135.8030678
+  },
+  {
+    "name": "NTTdocomo",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 43.059672,
+    "longitude": 141.335903
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2610967,
+    "longitude": 140.8960947
+  },
+  {
+    "name": "NTT東日本 宮城支店",
+    "operator": "NTT",
+    "latitude": 38.2536407,
+    "longitude": 140.881987
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 38.2509821,
+    "longitude": 140.3362594
+  },
+  {
+    "name": "NTT東日本 あかねヶ丘",
+    "operator": "NTT",
+    "latitude": 38.2500152,
+    "longitude": 140.3096648
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 38.7594893,
+    "longitude": 140.3030128
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6992466,
+    "longitude": 135.4979477
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6999283,
+    "longitude": 135.4982139
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6994549,
+    "longitude": 135.4990761
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6998568,
+    "longitude": 135.4995045
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.692197,
+    "longitude": 139.7402319
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6931016,
+    "longitude": 139.7432137
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6868165,
+    "longitude": 139.7417417
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7033848,
+    "longitude": 139.747336
+  },
+  {
+    "name": "NTT伊豆病院前",
+    "operator": "NTT",
+    "latitude": 35.0915594,
+    "longitude": 138.9556263
+  },
+  {
+    "name": "NTT西日本境電話交換所",
+    "operator": "NTT",
+    "latitude": 35.0432895,
+    "longitude": 137.0383507
+  },
+  {
+    "name": "NTT西日本刈谷営業所",
+    "operator": "NTT",
+    "latitude": 34.989451,
+    "longitude": 136.9998657
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6987675,
+    "longitude": 135.4975385
+  },
+  {
+    "name": "NTT東日本 山形支店 南陽交換所",
+    "operator": "NTT",
+    "latitude": 38.0491958,
+    "longitude": 140.1633021
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.733025,
+    "longitude": 139.716576
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6911426,
+    "longitude": 139.743325
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7274913,
+    "longitude": 139.7164829
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7068932,
+    "longitude": 139.7728638
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6734397,
+    "longitude": 139.7269513
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.7541794,
+    "longitude": 142.3987172
+  },
+  {
+    "name": "NTTロジスコ 東北支店",
+    "operator": "NTT",
+    "latitude": 38.2606643,
+    "longitude": 140.9258492
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6927208,
+    "longitude": 139.7413779
+  },
+  {
+    "name": "NTT西日本 東郷電話交換所",
+    "operator": "NTT",
+    "latitude": 35.0975631,
+    "longitude": 137.0522347
+  },
+  {
+    "name": "NTT R&D",
+    "operator": "NTT",
+    "latitude": 35.2254068,
+    "longitude": 139.6633476
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 38.6171219,
+    "longitude": 139.601807
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 38.6171696,
+    "longitude": 139.6024045
+  },
+  {
+    "name": "NTT修善寺ビル",
+    "operator": "NTT",
+    "latitude": 34.9796985,
+    "longitude": 138.9452187
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7047733,
+    "longitude": 135.4989987
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.8304856,
+    "longitude": 139.5620996
+  },
+  {
+    "name": "NTT西日本南知多ビル",
+    "operator": "NTT",
+    "latitude": 34.7398302,
+    "longitude": 136.8712352
+  },
+  {
+    "name": "ＮＴＴ",
+    "operator": "NTT",
+    "latitude": 24.348551,
+    "longitude": 124.1577972
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2694404,
+    "longitude": 140.893314
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6908802,
+    "longitude": 139.7842408
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6528424,
+    "longitude": 134.0272067
+  },
+  {
+    "name": "NTTドコモ東海 浜北内野無線局",
+    "operator": "NTT",
+    "latitude": 34.780384,
+    "longitude": 137.7386209
+  },
+  {
+    "name": "NTT印刷入間工場(狭山台)",
+    "operator": "NTT",
+    "latitude": 35.8120991,
+    "longitude": 139.3620811
+  },
+  {
+    "name": "ＮＴＴ朝日電話交換所",
+    "operator": "NTT",
+    "latitude": 36.9560219,
+    "longitude": 137.5584725
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7050543,
+    "longitude": 139.7544671
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7420517,
+    "longitude": 135.5464796
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7443685,
+    "longitude": 135.5429958
+  },
+  {
+    "name": "本家かまどや 鳳NTT前店",
+    "operator": "NTT",
+    "latitude": 34.5305377,
+    "longitude": 135.4658581
+  },
+  {
+    "name": "NTTフィールドテクノ",
+    "operator": "NTT",
+    "latitude": 36.0951704,
+    "longitude": 133.0950308
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.6896894,
+    "longitude": 137.2125044
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6973638,
+    "longitude": 139.813326
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7934278,
+    "longitude": 139.7970189
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7510811,
+    "longitude": 139.5942139
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.5178063,
+    "longitude": 139.4731849
+  },
+  {
+    "name": "ＮＴＴ上越ＬＭＣビル",
+    "operator": "NTT",
+    "latitude": 37.1649062,
+    "longitude": 138.2377186
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.3785803,
+    "longitude": 139.918189
+  },
+  {
+    "name": "ＮＴＴインフラネット",
+    "operator": "NTT",
+    "latitude": 35.4418378,
+    "longitude": 136.7602386
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.65787,
+    "longitude": 139.7495878
+  },
+  {
+    "name": "NTT 白馬",
+    "operator": "NTT",
+    "latitude": 36.6990026,
+    "longitude": 137.8642206
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.7120457,
+    "longitude": 137.1024221
+  },
+  {
+    "name": "NTT舳倉島無線中継所",
+    "operator": "NTT",
+    "latitude": 37.8481981,
+    "longitude": 136.9162818
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6896966,
+    "longitude": 139.785016
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7331255,
+    "longitude": 139.7101992
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6946225,
+    "longitude": 139.7518292
+  },
+  {
+    "name": "NTTル・パルク東江戸川第1駐車場",
+    "operator": "NTT",
+    "latitude": 35.6966853,
+    "longitude": 139.8945566
+  },
+  {
+    "name": "NTT 津社宅",
+    "operator": "NTT",
+    "latitude": 34.7376965,
+    "longitude": 136.5177219
+  },
+  {
+    "name": "（株）NTT西日本関西",
+    "operator": "NTT",
+    "latitude": 34.500848,
+    "longitude": 135.5989229
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.7451291,
+    "longitude": 137.1895178
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7046967,
+    "longitude": 135.5030816
+  },
+  {
+    "name": "NTT前",
+    "operator": "茨城交通",
+    "latitude": 36.3687273,
+    "longitude": 140.3589946
+  },
+  {
+    "name": "NTT前",
+    "operator": "NTT",
+    "latitude": 38.2209819,
+    "longitude": 139.4738401
+  },
+  {
+    "name": "NTT 西日本 向島電話交換所",
+    "operator": "NTT",
+    "latitude": 34.3970515,
+    "longitude": 133.2007559
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "NTT",
+    "latitude": 40.5146357,
+    "longitude": 141.4996037
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "NTT",
+    "latitude": 40.5146819,
+    "longitude": 141.4999586
+  },
+  {
+    "name": "NTT本荘",
+    "operator": "NTT",
+    "latitude": 35.4135253,
+    "longitude": 136.737327
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.8446152,
+    "longitude": 135.5813454
+  },
+  {
+    "name": "NTT西日本 三重支店",
+    "operator": "NTT",
+    "latitude": 34.7332293,
+    "longitude": 136.5159589
+  },
+  {
+    "name": "NTT神島電話交換所",
+    "operator": "NTT",
+    "latitude": 34.5477244,
+    "longitude": 136.9780742
+  },
+  {
+    "name": "NTT竹之丸第二社宅",
+    "operator": "NTT",
+    "latitude": 35.429548,
+    "longitude": 139.6445276
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6857047,
+    "longitude": 139.7769959
+  },
+  {
+    "name": "NTTDOCOMO携帯基地局",
+    "operator": "NTT",
+    "latitude": 34.8929481,
+    "longitude": 133.6825804
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.6897399,
+    "longitude": 139.7665734
+  },
+  {
+    "name": "NTTル・パルク日本橋二丁目第1駐車場",
+    "operator": "NTT",
+    "latitude": 35.6828186,
+    "longitude": 139.7725546
+  },
+  {
+    "name": "NTT茨城支店",
+    "operator": "茨城交通",
+    "latitude": 36.3792662,
+    "longitude": 140.4683509
+  },
+  {
+    "name": "NTT茨城支店",
+    "operator": "茨城交通",
+    "latitude": 36.3792856,
+    "longitude": 140.4685548
+  },
+  {
+    "name": "NTT木更津",
+    "operator": "日東交通",
+    "latitude": 35.3781095,
+    "longitude": 139.9185303
+  },
+  {
+    "name": "NTT木更津",
+    "operator": "日東交通",
+    "latitude": 35.3780592,
+    "longitude": 139.9186456
+  },
+  {
+    "name": "NTTデータ駒場研修センター",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.6557646,
+    "longitude": 139.680962
+  },
+  {
+    "name": "NTT東日本自由が丘ビル",
+    "operator": "株式会社ドコモ・バイクシェア",
+    "latitude": 35.615105,
+    "longitude": 139.6759493
+  },
+  {
+    "name": "NTT　今宿電話交換所",
+    "operator": "NTT",
+    "latitude": 33.5822012,
+    "longitude": 130.2644689
+  },
+  {
+    "name": "NTT　金武電話交換所",
+    "operator": "NTT",
+    "latitude": 33.5443271,
+    "longitude": 130.3146924
+  },
+  {
+    "name": "NTTファシリティーズ 東北支店",
+    "operator": "NTT",
+    "latitude": 38.2529837,
+    "longitude": 140.8817666
+  },
+  {
+    "name": "NTT西日本｜根本電話交換所",
+    "operator": "NTT",
+    "latitude": 35.3558576,
+    "longitude": 137.0926063
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5498165,
+    "longitude": 135.513344
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5475185,
+    "longitude": 135.5143447
+  },
+  {
+    "name": "NTTネクシア 仙台センター",
+    "operator": "NTT",
+    "latitude": 38.2582319,
+    "longitude": 140.8708747
+  },
+  {
+    "name": "NTTソルコ 東北支店",
+    "operator": "NTT",
+    "latitude": 38.258302,
+    "longitude": 140.8710161
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.5659446,
+    "longitude": 135.5236751
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6836647,
+    "longitude": 139.5589869
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6836673,
+    "longitude": 139.5588956
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7021128,
+    "longitude": 139.5767357
+  },
+  {
+    "name": "NTT浦安前",
+    "operator": "東京ベイシティ交通",
+    "latitude": 35.6494055,
+    "longitude": 139.9047687
+  },
+  {
+    "name": "NTT浦安前",
+    "operator": "東京ベイシティ交通",
+    "latitude": 35.6500921,
+    "longitude": 139.9037571
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7021209,
+    "longitude": 139.5611212
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.681596,
+    "longitude": 139.5535984
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5714557,
+    "longitude": 135.6178166
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6835115,
+    "longitude": 139.7841021
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6835038,
+    "longitude": 139.78356
+  },
+  {
+    "name": "NTT八木山交換所前",
+    "operator": "NTT",
+    "latitude": 38.239925,
+    "longitude": 140.851627
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7088262,
+    "longitude": 139.7955202
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7094115,
+    "longitude": 139.791463
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6849511,
+    "longitude": 139.5832065
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6832426,
+    "longitude": 139.5633488
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6995616,
+    "longitude": 139.5742849
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.699267,
+    "longitude": 139.5768383
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6850459,
+    "longitude": 139.5583257
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2407413,
+    "longitude": 140.8597844
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7226754,
+    "longitude": 139.7031563
+  },
+  {
+    "name": "NTT東日本　宮城支店船岡交換所",
+    "operator": "NTT",
+    "latitude": 38.0583552,
+    "longitude": 140.7728404
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "NTT",
+    "latitude": 34.6697826,
+    "longitude": 133.9119539
+  },
+  {
+    "name": "NTTドコモ 椎葉基地局",
+    "operator": "NTT",
+    "latitude": 32.460665,
+    "longitude": 131.1519286
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 35.736589,
+    "longitude": 139.8800715
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6935142,
+    "longitude": 139.5613895
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6695405,
+    "longitude": 139.5558111
+  },
+  {
+    "name": "NTT前",
+    "operator": "茨城交通",
+    "latitude": 36.394964,
+    "longitude": 140.5321634
+  },
+  {
+    "name": "NTT前",
+    "operator": "茨城交通",
+    "latitude": 36.3947351,
+    "longitude": 140.5321205
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7179341,
+    "longitude": 139.5667519
+  },
+  {
+    "name": "NTT郡家ビル",
+    "operator": "NTT",
+    "latitude": 35.4129092,
+    "longitude": 134.2536703
+  },
+  {
+    "name": "NTT上八丁堀ビル",
+    "operator": "株式会社NTTドコモ",
+    "latitude": 34.4007242,
+    "longitude": 132.4615317
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.227668,
+    "longitude": 140.8951263
+  },
+  {
+    "name": "南1条通NTT東日本札幌病院前",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 43.056442,
+    "longitude": 141.33425
+  },
+  {
+    "name": "NTT",
+    "operator": "ntt",
+    "latitude": 34.5468595,
+    "longitude": 135.5183754
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5594958,
+    "longitude": 135.5153317
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5413345,
+    "longitude": 133.7738168
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.9169703,
+    "longitude": 135.6872047
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.5653541,
+    "longitude": 135.5173854
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.5638341,
+    "longitude": 135.5244332
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5774892,
+    "longitude": 135.4764334
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5785612,
+    "longitude": 135.4744773
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5873672,
+    "longitude": 135.4823384
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5849995,
+    "longitude": 135.4801314
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.583037,
+    "longitude": 135.4783066
+  },
+  {
+    "name": "NTT八木山交換所前",
+    "operator": "NTT",
+    "latitude": 38.2400306,
+    "longitude": 140.851439
+  },
+  {
+    "name": "NTT五橋ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 38.2540529,
+    "longitude": 140.8817363
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 37.4781371,
+    "longitude": 138.9948782
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1114885,
+    "longitude": 140.8703928
+  },
+  {
+    "name": "CV愛甲(NTTドコモ神奈川支店)",
+    "operator": "NTT",
+    "latitude": 35.4382323,
+    "longitude": 139.3078558
+  },
+  {
+    "name": "NTT西日本京都支店峰山別館",
+    "operator": "NTT",
+    "latitude": 35.6239759,
+    "longitude": 135.0627154
+  },
+  {
+    "name": "大里NTT前",
+    "operator": "朝日自動車",
+    "latitude": 35.917722,
+    "longitude": 139.7820863
+  },
+  {
+    "name": "大里NTT前",
+    "operator": "朝日自動車",
+    "latitude": 35.9179131,
+    "longitude": 139.7822741
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1953698,
+    "longitude": 140.9203161
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5734445,
+    "longitude": 135.4720626
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5746532,
+    "longitude": 135.4729912
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5808325,
+    "longitude": 135.4787052
+  },
+  {
+    "name": "NTTネクシア株式会社",
+    "operator": "NTT",
+    "latitude": 35.605239,
+    "longitude": 139.5068262
+  },
+  {
+    "name": "NTT東日本 豊平ビル",
+    "operator": "NTT",
+    "latitude": 43.0454044,
+    "longitude": 141.3800364
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2206846,
+    "longitude": 140.8106292
+  },
+  {
+    "name": "NTT電話局前",
+    "operator": "茨城急行自動車",
+    "latitude": 35.9370958,
+    "longitude": 139.8189479
+  },
+  {
+    "name": "NTT電話局前",
+    "operator": "茨城急行自動車",
+    "latitude": 35.9378971,
+    "longitude": 139.8186207
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.7306227,
+    "longitude": 137.1836122
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2738924,
+    "longitude": 140.7642756
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2754543,
+    "longitude": 140.7499637
+  },
+  {
+    "name": "NTT武蔵野研究開発センタ",
+    "operator": "関東バス",
+    "latitude": 35.7183325,
+    "longitude": 139.5625404
+  },
+  {
+    "name": "NTT武蔵野研究開発センタ",
+    "operator": "関東バス",
+    "latitude": 35.7189486,
+    "longitude": 139.562563
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 39.717334,
+    "longitude": 141.1424017
+  },
+  {
+    "name": "NTT東日本 東北 仙南営業支店",
+    "operator": "NTT",
+    "latitude": 38.0492491,
+    "longitude": 140.7342146
+  },
+  {
+    "name": "NTT",
+    "operator": "ntt",
+    "latitude": 34.5407545,
+    "longitude": 135.5206748
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 38.0048378,
+    "longitude": 140.6206456
+  },
+  {
+    "name": "NTT東日本 七ヶ宿交換所",
+    "operator": "NTT",
+    "latitude": 37.9951812,
+    "longitude": 140.4416469
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1002033,
+    "longitude": 140.8562953
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1191978,
+    "longitude": 140.8734462
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1028108,
+    "longitude": 140.9121636
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1240575,
+    "longitude": 140.9021693
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6269208,
+    "longitude": 139.5731826
+  },
+  {
+    "name": "東日本興業 泉電力ビル",
+    "operator": "NTT",
+    "latitude": 38.3570085,
+    "longitude": 140.8547299
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5818373,
+    "longitude": 135.5089142
+  },
+  {
+    "name": "NTT東日本 迫",
+    "operator": "NTT",
+    "latitude": 38.6881385,
+    "longitude": 141.194612
+  },
+  {
+    "name": "NTT docomo",
+    "operator": "NTT",
+    "latitude": 34.3252161,
+    "longitude": 134.0446629
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5597242,
+    "longitude": 135.4723619
+  },
+  {
+    "name": "NTT青葉通ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 38.2577154,
+    "longitude": 140.8703943
+  },
+  {
+    "name": "東日本不動産仙台ファーストビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 38.2521045,
+    "longitude": 140.8814242
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5805485,
+    "longitude": 135.463541
+  },
+  {
+    "name": "NTT docomo",
+    "operator": "NTT docomo",
+    "latitude": 33.3595692,
+    "longitude": 130.7818495
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5551746,
+    "longitude": 135.5059118
+  },
+  {
+    "name": "NTT東日本 南小泉交換所",
+    "operator": "NTT",
+    "latitude": 38.2389564,
+    "longitude": 140.9027237
+  },
+  {
+    "name": "NTT docomo 基地局",
+    "operator": "NTT Docomo",
+    "latitude": 33.3567745,
+    "longitude": 130.7544662
+  },
+  {
+    "name": "NTT docomo　基地局",
+    "operator": "NTT docomo",
+    "latitude": 33.3397478,
+    "longitude": 130.7601558
+  },
+  {
+    "name": "NTT docomo 基地局",
+    "operator": "NTT docomo",
+    "latitude": 33.3534135,
+    "longitude": 130.7347649
+  },
+  {
+    "name": "NTT東日本 階上電話交換所",
+    "operator": "NTT",
+    "latitude": 38.8425202,
+    "longitude": 141.5799934
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2716127,
+    "longitude": 140.7672424
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8235329,
+    "longitude": 140.7513155
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8232884,
+    "longitude": 140.7511592
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8233582,
+    "longitude": 140.7511645
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8234864,
+    "longitude": 140.7513315
+  },
+  {
+    "name": "国道NTT",
+    "operator": "NTT",
+    "latitude": 40.8234165,
+    "longitude": 140.7503626
+  },
+  {
+    "name": "NTTDocomo東海",
+    "operator": "NTT",
+    "latitude": 34.8364834,
+    "longitude": 137.4025072
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2494991,
+    "longitude": 140.8976276
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.0639876,
+    "longitude": 141.3307515
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2442535,
+    "longitude": 140.8953922
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6868409,
+    "longitude": 139.7666525
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6877341,
+    "longitude": 139.7667901
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6873579,
+    "longitude": 139.7674357
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6858213,
+    "longitude": 139.7678451
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.685894,
+    "longitude": 139.767112
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6856511,
+    "longitude": 139.7637584
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2487409,
+    "longitude": 140.9152589
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.29825,
+    "longitude": 140.6813373
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.292916,
+    "longitude": 140.6867566
+  },
+  {
+    "name": "ＮＴＴ東日本",
+    "operator": "NTT",
+    "latitude": 38.4436423,
+    "longitude": 141.2681052
+  },
+  {
+    "name": "ＮＴＴ東日本　関東病院",
+    "operator": "ＮＴＴ東日本",
+    "latitude": 35.6309711,
+    "longitude": 139.7263178
+  },
+  {
+    "name": "NTT館山",
+    "operator": "日東交通",
+    "latitude": 34.9888072,
+    "longitude": 139.8623046
+  },
+  {
+    "name": "NTT館山",
+    "operator": "JRバス関東",
+    "latitude": 34.9892969,
+    "longitude": 139.8624902
+  },
+  {
+    "name": "NTT前",
+    "operator": "千葉交通",
+    "latitude": 35.7769657,
+    "longitude": 140.2876411
+  },
+  {
+    "name": "NTT前",
+    "operator": "千葉交通",
+    "latitude": 35.7770767,
+    "longitude": 140.2878557
+  },
+  {
+    "name": "ＮＴＴ山口前",
+    "operator": "中国ジェイアールバス",
+    "latitude": 34.1673104,
+    "longitude": 131.4615667
+  },
+  {
+    "name": "ＮＴＴ山口前",
+    "operator": "中国ジェイアールバス",
+    "latitude": 34.1678937,
+    "longitude": 131.4622166
+  },
+  {
+    "name": "千代田ＮＴＴ前",
+    "operator": "中国ジェイアールバス",
+    "latitude": 34.6791577,
+    "longitude": 132.5321542
+  },
+  {
+    "name": "千代田ＮＴＴ前",
+    "operator": "中国ジェイアールバス",
+    "latitude": 34.679041,
+    "longitude": 132.5323042
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "備北交通",
+    "latitude": 34.8050152,
+    "longitude": 132.8552967
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "備北交通",
+    "latitude": 34.8050147,
+    "longitude": 132.8553118
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "備北交通",
+    "latitude": 34.8053998,
+    "longitude": 132.8543216
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "広電バス",
+    "latitude": 34.8053665,
+    "longitude": 132.8543549
+  },
+  {
+    "name": "ＮＴＴ前",
+    "operator": "広電バス",
+    "latitude": 34.8050832,
+    "longitude": 132.8550549
+  },
+  {
+    "name": "NTT前",
+    "operator": "千葉交通",
+    "latitude": 35.7338406,
+    "longitude": 140.8323455
+  },
+  {
+    "name": "NTT前",
+    "operator": "千葉交通",
+    "latitude": 35.7337056,
+    "longitude": 140.832198
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.8643775,
+    "longitude": 139.6700817
+  },
+  {
+    "name": "NTTドコモ 秋穂筈倉基地局 無線基地局 山口県山口市秋穂東中道",
+    "operator": "nttドコモ",
+    "latitude": 33.9868212,
+    "longitude": 131.4397614
+  },
+  {
+    "name": "NTTドコモ 無線基地局 山口県山口市秋穂東花香北",
+    "operator": "nttドコモ",
+    "latitude": 33.9950036,
+    "longitude": 131.432467
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT",
+    "latitude": 35.5104942,
+    "longitude": 137.8359448
+  },
+  {
+    "name": "NTTドコモ 基地局 山口県山口市吉敷中東４丁目",
+    "operator": "nttドコモ",
+    "latitude": 34.1663896,
+    "longitude": 131.4358035
+  },
+  {
+    "name": "NTTドコモ 函南仁田無線局",
+    "operator": "NTT",
+    "latitude": 35.0761774,
+    "longitude": 138.9422966
+  },
+  {
+    "name": "NTTドコモ 柏原西基地局",
+    "operator": "NTTドコモ",
+    "latitude": 33.5234784,
+    "longitude": 130.3839788
+  },
+  {
+    "name": "NTT江戸川支店前",
+    "operator": "東京都交通局",
+    "latitude": 35.7104001,
+    "longitude": 139.8739761
+  },
+  {
+    "name": "NTT江戸川支店前",
+    "operator": "東京都交通局",
+    "latitude": 35.7100995,
+    "longitude": 139.8740512
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 36.6461075,
+    "longitude": 138.1783701
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2768881,
+    "longitude": 140.9239191
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5581037,
+    "longitude": 135.4712263
+  },
+  {
+    "name": "殿廻（NTT 交換センター付近）",
+    "operator": "東金市循環バス",
+    "latitude": 35.5584106,
+    "longitude": 140.4072261
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5580939,
+    "longitude": 135.5085701
+  },
+  {
+    "name": "NTT館山",
+    "operator": "日東交通",
+    "latitude": 34.9893072,
+    "longitude": 139.8624936
+  },
+  {
+    "name": "NTT館山",
+    "operator": "JRバス関東",
+    "latitude": 34.9888011,
+    "longitude": 139.8623041
+  },
+  {
+    "name": "NTT戸塚支店ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.39857,
+    "longitude": 139.5325889
+  },
+  {
+    "name": "NTT希望ヶ丘ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.461693,
+    "longitude": 139.512063
+  },
+  {
+    "name": "NTT西谷ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.4757596,
+    "longitude": 139.5723384
+  },
+  {
+    "name": "NTT長津田ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.530251,
+    "longitude": 139.500037
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "NTT",
+    "latitude": 34.6103409,
+    "longitude": 133.863027
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "NTT",
+    "latitude": 34.6615307,
+    "longitude": 133.926725
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.6040588,
+    "longitude": 133.8274584
+  },
+  {
+    "name": "NTTREC東北営業所",
+    "operator": "NTT",
+    "latitude": 38.1726046,
+    "longitude": 140.8907109
+  },
+  {
+    "name": "NTTドコモ 福岡市民の森基地局",
+    "operator": "NTTドコモ",
+    "latitude": 33.5163729,
+    "longitude": 130.3760366
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8224419,
+    "longitude": 140.7504602
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8225566,
+    "longitude": 140.7502502
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8224499,
+    "longitude": 140.7503595
+  },
+  {
+    "name": "NTT青森支店前",
+    "operator": "NTT",
+    "latitude": 40.8225681,
+    "longitude": 140.7503588
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2616682,
+    "longitude": 140.9004403
+  },
+  {
+    "name": "西日本電信電話 本社",
+    "operator": "NTT",
+    "latitude": 34.6988676,
+    "longitude": 135.530052
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 26.692359,
+    "longitude": 127.9281397
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 26.7103791,
+    "longitude": 127.8025288
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6933776,
+    "longitude": 134.2047203
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6467613,
+    "longitude": 135.5109779
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7387087,
+    "longitude": 135.5415884
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7377114,
+    "longitude": 135.5418679
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7390559,
+    "longitude": 135.5401227
+  },
+  {
+    "name": "NTT東日本　北海道",
+    "operator": "NTT",
+    "latitude": 43.7701559,
+    "longitude": 142.3630012
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7432518,
+    "longitude": 135.5360203
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7499347,
+    "longitude": 135.5354197
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7553046,
+    "longitude": 135.5511005
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7516624,
+    "longitude": 135.5487072
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7442983,
+    "longitude": 135.5265008
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7478291,
+    "longitude": 135.5278998
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7491146,
+    "longitude": 135.5295123
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.756636,
+    "longitude": 135.545477
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7574622,
+    "longitude": 135.534742
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7284964,
+    "longitude": 135.5422947
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7280686,
+    "longitude": 135.5382856
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7262528,
+    "longitude": 135.5350415
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.722409,
+    "longitude": 135.538451
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7236766,
+    "longitude": 135.5384653
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7259575,
+    "longitude": 135.5447811
+  },
+  {
+    "name": "東日本電信電話株式会社",
+    "operator": "NTT",
+    "latitude": 36.6490069,
+    "longitude": 138.1855847
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7175628,
+    "longitude": 135.5381126
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7167117,
+    "longitude": 135.5380577
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7183847,
+    "longitude": 135.538203
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.715705,
+    "longitude": 135.5402157
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7195279,
+    "longitude": 135.5406151
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.719338,
+    "longitude": 135.5441877
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7181421,
+    "longitude": 135.5487036
+  },
+  {
+    "name": "NTT華山無線中継所",
+    "operator": "NTT",
+    "latitude": 34.1689587,
+    "longitude": 131.0314372
+  },
+  {
+    "name": "NTTドコモ 美東無線中継所",
+    "operator": "NTT",
+    "latitude": 34.2305028,
+    "longitude": 131.366975
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7166811,
+    "longitude": 135.5560988
+  },
+  {
+    "name": "NTT口",
+    "operator": "NTT",
+    "latitude": 35.4027637,
+    "longitude": 134.7706338
+  },
+  {
+    "name": "NTT口",
+    "operator": "NTT",
+    "latitude": 35.4026347,
+    "longitude": 134.7703213
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7202969,
+    "longitude": 135.5542305
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.724684,
+    "longitude": 135.5543193
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7257563,
+    "longitude": 135.5518045
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7300845,
+    "longitude": 135.5509174
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7158112,
+    "longitude": 135.5852483
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7159506,
+    "longitude": 135.5838402
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1995876,
+    "longitude": 140.8684704
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "NTT",
+    "latitude": 34.7274062,
+    "longitude": 135.4227322
+  },
+  {
+    "name": "CV厚木飯山(NTTドコモ)",
+    "operator": "NTT",
+    "latitude": 35.4670892,
+    "longitude": 139.3139116
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7075533,
+    "longitude": 135.5889856
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 36.0564009,
+    "longitude": 136.4922345
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5755275,
+    "longitude": 135.4795518
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7025607,
+    "longitude": 135.5602395
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5733578,
+    "longitude": 135.4755037
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2825509,
+    "longitude": 140.8396569
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6986472,
+    "longitude": 135.5702616
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.69939,
+    "longitude": 135.5638191
+  },
+  {
+    "name": "NTT",
+    "operator": "ふれあいバス",
+    "latitude": 35.6562033,
+    "longitude": 140.3168343
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6561706,
+    "longitude": 140.316318
+  },
+  {
+    "name": "NTT",
+    "operator": "ふれあいバス",
+    "latitude": 35.6563777,
+    "longitude": 140.3169537
+  },
+  {
+    "name": "ＮＴＴドコモ　八幡荒神塚",
+    "operator": "株式会社ＮＴＴドコモ",
+    "latitude": 34.8781474,
+    "longitude": 135.6960909
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.692519,
+    "longitude": 135.5791081
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6942477,
+    "longitude": 135.5694786
+  },
+  {
+    "name": "NTTドコモ牛口名基地局",
+    "operator": "NTT",
+    "latitude": 32.8428378,
+    "longitude": 130.1804595
+  },
+  {
+    "name": "NTT無線中継所（跡地）山口県下関市高畑",
+    "operator": "NTT",
+    "latitude": 33.9924329,
+    "longitude": 130.9668734
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7203459,
+    "longitude": 140.6486517
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6924023,
+    "longitude": 135.5610288
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6400347,
+    "longitude": 135.5340784
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.639326,
+    "longitude": 135.5339852
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6316257,
+    "longitude": 135.5435252
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6361616,
+    "longitude": 135.5444247
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6410463,
+    "longitude": 139.444454
+  },
+  {
+    "name": "NTTドコモ 無線基地局 山口県柳井市日積",
+    "operator": "NTT",
+    "latitude": 34.0105306,
+    "longitude": 132.1964415
+  },
+  {
+    "name": "NTT錦無線中継所・FMわっしょい向島送信所77.3MHz（錦山山頂・旧NTT錦無線中継所敷地内）",
+    "operator": "NTT",
+    "latitude": 34.0083505,
+    "longitude": 131.5804415
+  },
+  {
+    "name": "NTTドコモ 防府向島基地局 山口県防府市向島錦山",
+    "operator": "NTT",
+    "latitude": 34.0080236,
+    "longitude": 131.5803886
+  },
+  {
+    "name": "NTT栄ビル(1)(2)",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.1694,
+    "longitude": 136.912338
+  },
+  {
+    "name": "NTT大網電話交換センタ",
+    "operator": "NTT",
+    "latitude": 35.5191363,
+    "longitude": 140.3234553
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6730767,
+    "longitude": 139.6842336
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.0216179,
+    "longitude": 135.7787301
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5303244,
+    "longitude": 135.498836
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2732326,
+    "longitude": 140.9681033
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.1685501,
+    "longitude": 140.8676066
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.7090103,
+    "longitude": 140.8354198
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.62729,
+    "longitude": 135.4766464
+  },
+  {
+    "name": "日本電信電話公社　淀逓信病院址",
+    "operator": "NTT",
+    "latitude": 34.8832071,
+    "longitude": 135.7356656
+  },
+  {
+    "name": "NTT西日本 香川支店",
+    "operator": "NTT",
+    "latitude": 34.3362927,
+    "longitude": 134.0514719
+  },
+  {
+    "name": "NTTドコモ電波塔（三原山登山口）",
+    "operator": "NTT",
+    "latitude": 33.0931419,
+    "longitude": 139.8024415
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 31.5573982,
+    "longitude": 130.4941045
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.233522,
+    "longitude": 140.9065244
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2494896,
+    "longitude": 140.9248316
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 40.8234535,
+    "longitude": 140.7412015
+  },
+  {
+    "name": "NTT 高取無線中継所",
+    "operator": "NTT",
+    "latitude": 34.4280439,
+    "longitude": 135.8218724
+  },
+  {
+    "name": "NTTドコモ 緑亀が洞無線局",
+    "operator": "NTTドコモ",
+    "latitude": 35.0950436,
+    "longitude": 137.0107666
+  },
+  {
+    "name": "NTT岩槻ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.949423,
+    "longitude": 139.696362
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.3336873,
+    "longitude": 137.1289014
+  },
+  {
+    "name": "NTT東日本 飯山電話交換所",
+    "operator": "NTT",
+    "latitude": 36.8479765,
+    "longitude": 138.3638093
+  },
+  {
+    "name": "NTTドコモ 十七流",
+    "operator": "NTT",
+    "latitude": 39.7207617,
+    "longitude": 140.1404318
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.5743742,
+    "longitude": 140.965339
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7498186,
+    "longitude": 139.7361491
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9503421,
+    "longitude": 135.7470279
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.4356433,
+    "longitude": 135.2443968
+  },
+  {
+    "name": "NTT電話交換所前",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 41.7831712,
+    "longitude": 140.7973542
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5377149,
+    "longitude": 135.534388
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5478437,
+    "longitude": 135.5084699
+  },
+  {
+    "name": "NTTけいはんな",
+    "operator": "奈良交通",
+    "latitude": 34.7417586,
+    "longitude": 135.7648797
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.3183398,
+    "longitude": 139.1981434
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.3040222,
+    "longitude": 140.8702589
+  },
+  {
+    "name": "NTTクレド基町ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.39634,
+    "longitude": 132.457382
+  },
+  {
+    "name": "NTTクレド白島ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.405043,
+    "longitude": 132.464869
+  },
+  {
+    "name": "NTT西日本天王寺ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.658772,
+    "longitude": 135.518323
+  },
+  {
+    "name": "NTT西日本平野ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.617818,
+    "longitude": 135.546783
+  },
+  {
+    "name": "NTT西日本淀川ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.717031,
+    "longitude": 135.48248
+  },
+  {
+    "name": "NTT西日本大阪城東ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.70305,
+    "longitude": 135.545723
+  },
+  {
+    "name": "NTT西日本豊崎ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.710384,
+    "longitude": 135.49789
+  },
+  {
+    "name": "NTT西日本此花ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.685452,
+    "longitude": 135.466332
+  },
+  {
+    "name": "NTT西日本堀川ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.701302,
+    "longitude": 135.516047
+  },
+  {
+    "name": "NTT西日本港ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.66347,
+    "longitude": 135.454534
+  },
+  {
+    "name": "NTT西日本西淀川ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.709081,
+    "longitude": 135.457914
+  },
+  {
+    "name": "NTT西日本東成第2ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.676765,
+    "longitude": 135.544177
+  },
+  {
+    "name": "NTT西日本土佐堀ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.691038,
+    "longitude": 135.49418
+  },
+  {
+    "name": "NTT西日本高津ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 34.672183,
+    "longitude": 135.514117
+  },
+  {
+    "name": "NTTドコモ西都ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 36.593627,
+    "longitude": 136.627882
+  },
+  {
+    "name": "NTTdocomo新潟ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 37.9126,
+    "longitude": 139.0531
+  },
+  {
+    "name": "NTT布池ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.175612,
+    "longitude": 136.921726
+  },
+  {
+    "name": "NTTコミュニケーションズ代官町ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.174412,
+    "longitude": 136.924261
+  },
+  {
+    "name": "NTT千種第二ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.164907,
+    "longitude": 136.935845
+  },
+  {
+    "name": "NTT矢田ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.184746,
+    "longitude": 136.942009
+  },
+  {
+    "name": "NTT則武ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.172234,
+    "longitude": 136.87632
+  },
+  {
+    "name": "NTT中村ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.166873,
+    "longitude": 136.863019
+  },
+  {
+    "name": "NTT瑞穂通ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.133835,
+    "longitude": 136.934014
+  },
+  {
+    "name": "NTT上前津ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.159334,
+    "longitude": 136.907351
+  },
+  {
+    "name": "NTT広小路ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.166407,
+    "longitude": 136.899142
+  },
+  {
+    "name": "NTT笹島ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.175875,
+    "longitude": 136.883808
+  },
+  {
+    "name": "NTT新道ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.18021,
+    "longitude": 136.886248
+  },
+  {
+    "name": "NTT神奈川新町ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.478933,
+    "longitude": 139.638926
+  },
+  {
+    "name": "NTT川崎ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.529519,
+    "longitude": 139.704845
+  },
+  {
+    "name": "NTTコミュニケーションズ唐ヶ崎ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.627373,
+    "longitude": 139.692044
+  },
+  {
+    "name": "NTT三田ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.652549,
+    "longitude": 139.747789
+  },
+  {
+    "name": "NTT 東日本 関東病院(南側)",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.630151,
+    "longitude": 139.725215
+  },
+  {
+    "name": "NTT 東日本 関東病院(北側)",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.632191,
+    "longitude": 139.725002
+  },
+  {
+    "name": "NTTドコモ川崎ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.528801,
+    "longitude": 139.694661
+  },
+  {
+    "name": "NTT渡田ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.513644,
+    "longitude": 139.712594
+  },
+  {
+    "name": "NTT馬込ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.588106,
+    "longitude": 139.718852
+  },
+  {
+    "name": "NTT虎ノ門ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.666075,
+    "longitude": 139.748008
+  },
+  {
+    "name": "NTT東日本辰巳ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.647091,
+    "longitude": 139.817333
+  },
+  {
+    "name": "NTT雪ヶ谷ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.598601,
+    "longitude": 139.684747
+  },
+  {
+    "name": "NTT本牧ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.435227,
+    "longitude": 139.663295
+  },
+  {
+    "name": "NTTル･パルク山下駐車場",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.444357,
+    "longitude": 139.643649
+  },
+  {
+    "name": "NTT成城ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.648021,
+    "longitude": 139.606529
+  },
+  {
+    "name": "NTT砧ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.63534,
+    "longitude": 139.601602
+  },
+  {
+    "name": "NTT瀬田ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.618357,
+    "longitude": 139.626191
+  },
+  {
+    "name": "NTT瀬谷ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.46555,
+    "longitude": 139.481385
+  },
+  {
+    "name": "NTT小雀ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.374791,
+    "longitude": 139.508775
+  },
+  {
+    "name": "NTT戸塚LMC",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.391529,
+    "longitude": 139.521473
+  },
+  {
+    "name": "NTT横浜北ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.484182,
+    "longitude": 139.626632
+  },
+  {
+    "name": "ＮＴＴ東日本築地ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.670674,
+    "longitude": 139.775993
+  },
+  {
+    "name": "NTTコミュニケーションズ一ツ橋ビル駐車場",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.6915,
+    "longitude": 139.75685
+  },
+  {
+    "name": "NTT野方ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.710285,
+    "longitude": 139.66173
+  },
+  {
+    "name": "NTTコミュニケーションズ新宿ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.699312,
+    "longitude": 139.696468
+  },
+  {
+    "name": "ＮＴＴ東日本 本社ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.683102,
+    "longitude": 139.688852
+  },
+  {
+    "name": "NTTドコモ墨田ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.697898,
+    "longitude": 139.795345
+  },
+  {
+    "name": "NTT井草ビル第1ポート",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.714044,
+    "longitude": 139.61688
+  },
+  {
+    "name": "NTT井草ビル第２ポート",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.714077,
+    "longitude": 139.61694
+  },
+  {
+    "name": "NTT井草ビル第3ポート",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.714151,
+    "longitude": 139.61693
+  },
+  {
+    "name": "NTT四谷ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.691188,
+    "longitude": 139.712079
+  },
+  {
+    "name": "NTT東日本大塚ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.726188,
+    "longitude": 139.741375
+  },
+  {
+    "name": "NTTドコモ代々木ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.684451,
+    "longitude": 139.702884
+  },
+  {
+    "name": "セブン-イレブン 練馬東大泉NTTビル店",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.750761,
+    "longitude": 139.594457
+  },
+  {
+    "name": "NTT烏山ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.669285,
+    "longitude": 139.597931
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.5980045,
+    "longitude": 139.3456893
+  },
+  {
+    "name": "NTT稲荷山基地局",
+    "operator": "NTT",
+    "latitude": 36.5334845,
+    "longitude": 138.0979204
+  },
+  {
+    "name": "株式会社NTTデータ",
+    "operator": "NTT",
+    "latitude": 35.6664956,
+    "longitude": 139.8161512
+  },
+  {
+    "name": "NTT東日本長野支店",
+    "operator": "NTT",
+    "latitude": 36.6531478,
+    "longitude": 138.1853954
+  },
+  {
+    "name": "NTT西日本 御井町電話交換所",
+    "operator": "NTT",
+    "latitude": 33.3131944,
+    "longitude": 130.5555555
+  },
+  {
+    "name": "NTT東日本 町田忠生電話交換所",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.5760567,
+    "longitude": 139.4204416
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5426787,
+    "longitude": 135.5265591
+  },
+  {
+    "name": "NTTドコモ 無線基地局 島根県益田市匹見町匹見",
+    "operator": "NTT",
+    "latitude": 34.5493122,
+    "longitude": 132.0346855
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.3917065,
+    "longitude": 139.5212936
+  },
+  {
+    "name": "NTT東日本 群馬支店",
+    "operator": "NTT",
+    "latitude": 36.3903134,
+    "longitude": 139.0679192
+  },
+  {
+    "name": "NTTドコモ　向島新上林",
+    "operator": "NTTドコモ",
+    "latitude": 34.9148122,
+    "longitude": 135.764223
+  },
+  {
+    "name": "NTT江南ビル前",
+    "operator": "NTT",
+    "latitude": 35.3329274,
+    "longitude": 136.8701424
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 33.2264514,
+    "longitude": 132.5637461
+  },
+  {
+    "name": "西日本電信電話株式会社",
+    "operator": "NTT",
+    "latitude": 34.2281328,
+    "longitude": 133.7809295
+  },
+  {
+    "name": "NTTフィールドテクノ 四国支店 香川営業所",
+    "operator": "NTT",
+    "latitude": 34.2280279,
+    "longitude": 133.7810087
+  },
+  {
+    "name": "NTTビジネスソリューションズ 四国支店",
+    "operator": "NTT",
+    "latitude": 34.2280806,
+    "longitude": 133.7808387
+  },
+  {
+    "name": "NTT大森",
+    "operator": "NTT",
+    "latitude": 35.5865706,
+    "longitude": 139.7318657
+  },
+  {
+    "name": "NTT大森",
+    "operator": "NTT",
+    "latitude": 35.5873161,
+    "longitude": 139.7318748
+  },
+  {
+    "name": "NTT大森",
+    "operator": "NTT",
+    "latitude": 35.5873028,
+    "longitude": 139.7315732
+  },
+  {
+    "name": "NTT",
+    "operator": "日本電信電話株式会社",
+    "latitude": 34.6493846,
+    "longitude": 134.164342
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.6446117,
+    "longitude": 133.8982713
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6718964,
+    "longitude": 134.171604
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.960233,
+    "longitude": 135.7463457
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9604522,
+    "longitude": 135.7470023
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9904136,
+    "longitude": 135.8401961
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6691104,
+    "longitude": 139.740475
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7813504,
+    "longitude": 134.3011586
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7813635,
+    "longitude": 134.3011905
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7799295,
+    "longitude": 134.30356
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7799236,
+    "longitude": 134.3035021
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7682895,
+    "longitude": 134.0735353
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.694112,
+    "longitude": 135.1994615
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.694515,
+    "longitude": 135.1993625
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6905308,
+    "longitude": 140.0387739
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6314801,
+    "longitude": 139.7419959
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6845537,
+    "longitude": 139.703223
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6445001,
+    "longitude": 133.8983802
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6524241,
+    "longitude": 134.0354868
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 33.5883632,
+    "longitude": 130.3974953
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.666715,
+    "longitude": 134.0927982
+  },
+  {
+    "name": "ＮＴＴ西日本",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.33559,
+    "longitude": 134.0513778
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5021264,
+    "longitude": 133.7905368
+  },
+  {
+    "name": "NTT西日本　都井交換局",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 31.3981188,
+    "longitude": 131.3051436
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.4329415,
+    "longitude": 135.243249
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9316292,
+    "longitude": 133.5162218
+  },
+  {
+    "name": "NTT柏前",
+    "operator": "東武バスセントラル",
+    "latitude": 35.8575092,
+    "longitude": 139.9706429
+  },
+  {
+    "name": "NTT柏前",
+    "operator": "東武バスセントラル",
+    "latitude": 35.8574592,
+    "longitude": 139.9704337
+  },
+  {
+    "name": "NTT鳩ヶ谷ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.8296299,
+    "longitude": 139.7380052
+  },
+  {
+    "name": "NTT新常盤ビル（桜並木沿い）",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.8649785,
+    "longitude": 139.6473284
+  },
+  {
+    "name": "NTT大井ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.858109,
+    "longitude": 139.513642
+  },
+  {
+    "name": "NTTル・パルク",
+    "operator": "NTTル・パルク",
+    "latitude": 35.6511846,
+    "longitude": 139.7035092
+  },
+  {
+    "name": "NTT西日本比治山ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.38074,
+    "longitude": 132.47201
+  },
+  {
+    "name": "NTT西日本十日市ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.39834,
+    "longitude": 132.44387
+  },
+  {
+    "name": "NTT西日本基町ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.39783,
+    "longitude": 132.45677
+  },
+  {
+    "name": "NTTコム 京都南ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.960634,
+    "longitude": 135.745871
+  },
+  {
+    "name": "NTTデータ堂島ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.695109,
+    "longitude": 135.49217
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT",
+    "latitude": 35.6845109,
+    "longitude": 139.7029373
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT",
+    "latitude": 34.6807323,
+    "longitude": 135.5148743
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT Docomo",
+    "latitude": 34.6806843,
+    "longitude": 135.5149747
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT Docomo",
+    "latitude": 34.6482127,
+    "longitude": 133.9181453
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT",
+    "latitude": 35.6845616,
+    "longitude": 139.7030736
+  },
+  {
+    "name": "NTTドコモ",
+    "operator": "NTT docomo",
+    "latitude": 34.3384866,
+    "longitude": 134.046918
+  },
+  {
+    "name": "NTTドコモ",
+    "operator": "NTT docomo",
+    "latitude": 34.3384724,
+    "longitude": 134.0469764
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9168695,
+    "longitude": 135.6872521
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.6984578,
+    "longitude": 135.5031802
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6985569,
+    "longitude": 135.5031982
+  },
+  {
+    "name": "(株)NTTデータウェーブ",
+    "operator": "NTT",
+    "latitude": 35.6777578,
+    "longitude": 139.7124984
+  },
+  {
+    "name": "NTTコムウェア",
+    "operator": "NTT COMWARE",
+    "latitude": 34.9758503,
+    "longitude": 135.7472096
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9758054,
+    "longitude": 135.7472233
+  },
+  {
+    "name": "NTT Data Osaka Dojima",
+    "operator": "NTT",
+    "latitude": 34.6955151,
+    "longitude": 135.4910672
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6954351,
+    "longitude": 135.491135
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.9847255,
+    "longitude": 135.7596386
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.9634504,
+    "longitude": 140.6379047
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.7946153,
+    "longitude": 139.3193164
+  },
+  {
+    "name": "NTT",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.7957047,
+    "longitude": 139.3183651
+  },
+  {
+    "name": "NTT Docomo",
+    "operator": "NTT",
+    "latitude": 33.1600131,
+    "longitude": 130.4034064
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "NTT東日本",
+    "latitude": 35.4755861,
+    "longitude": 139.5726537
+  },
+  {
+    "name": "NTTルパルク",
+    "operator": "NTT",
+    "latitude": 35.408151,
+    "longitude": 139.5914251
+  },
+  {
+    "name": "NTTルパルク",
+    "operator": "NTT",
+    "latitude": 35.4082369,
+    "longitude": 139.591803
+  },
+  {
+    "name": "レソラNTT夢天神ホール",
+    "operator": "NTT",
+    "latitude": 33.5885397,
+    "longitude": 130.3983144
+  },
+  {
+    "name": "NTT西日本 南大東大池無線中継",
+    "operator": "NTT",
+    "latitude": 25.8678259,
+    "longitude": 131.2366597
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 33.4229296,
+    "longitude": 130.6600368
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.1036519,
+    "longitude": 138.859842
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6475749,
+    "longitude": 139.7221663
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.5853416,
+    "longitude": 140.9674834
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.3368705,
+    "longitude": 140.6109013
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.1012852,
+    "longitude": 139.4587355
+  },
+  {
+    "name": "NTT西日本 読谷電話交換所",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 26.403175,
+    "longitude": 127.7376447
+  },
+  {
+    "name": "NTT",
+    "operator": "ntt",
+    "latitude": 35.7588879,
+    "longitude": 139.4669257
+  },
+  {
+    "name": "ＮＴＴ山口前",
+    "operator": "中国ジェイアールバス",
+    "latitude": 34.167827,
+    "longitude": 131.4622642
+  },
+  {
+    "name": "ＮＴＴ山口前",
+    "operator": "中国ジェイアールバス",
+    "latitude": 34.1673674,
+    "longitude": 131.461511
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6463183,
+    "longitude": 139.7106279
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7867332,
+    "longitude": 139.4781241
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6491322,
+    "longitude": 139.7109839
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6265999,
+    "longitude": 133.807649
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6263582,
+    "longitude": 133.8082078
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.2681207,
+    "longitude": 140.7907272
+  },
+  {
+    "name": "NTTコミュニケーションズ",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.66324,
+    "longitude": 133.92644
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT東日本",
+    "latitude": 35.7328151,
+    "longitude": 139.7490576
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT東日本",
+    "latitude": 35.7402144,
+    "longitude": 139.7468151
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT東日本",
+    "latitude": 35.7283993,
+    "longitude": 139.729445
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT東日本",
+    "latitude": 35.7320395,
+    "longitude": 139.7284922
+  },
+  {
+    "name": "NTT",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 34.9879632,
+    "longitude": 133.4608384
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.1566104,
+    "longitude": 133.6149005
+  },
+  {
+    "name": "NTTクレドホール",
+    "operator": "NTT",
+    "latitude": 34.3967472,
+    "longitude": 132.4568769
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7276013,
+    "longitude": 139.7270895
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7277914,
+    "longitude": 139.7270991
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT東日本",
+    "latitude": 35.7300971,
+    "longitude": 139.7129205
+  },
+  {
+    "name": "【KG-004】NTT横浜北ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.484182,
+    "longitude": 139.626632
+  },
+  {
+    "name": "H-003.NTT西谷ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.475736,
+    "longitude": 139.572285
+  },
+  {
+    "name": "141.NTT神奈川新町ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.478933,
+    "longitude": 139.638926
+  },
+  {
+    "name": "083.NTT本牧ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.435227,
+    "longitude": 139.663295
+  },
+  {
+    "name": "NTT西日本大和郡山ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.648302,
+    "longitude": 135.781885
+  },
+  {
+    "name": "NTT西日本香川支社 ビル横",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.336224,
+    "longitude": 134.051376
+  },
+  {
+    "name": "NTT西日本香川支社 公衆電話横",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.336302,
+    "longitude": 134.051724
+  },
+  {
+    "name": "NTT西日本香川支社 スロープ下",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.336319,
+    "longitude": 134.051566
+  },
+  {
+    "name": "NTT新神戸ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.687213,
+    "longitude": 135.189872
+  },
+  {
+    "name": "NTT西日本大州ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.38807,
+    "longitude": 132.49186
+  },
+  {
+    "name": "NTT西日本 賀茂別館",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.042311,
+    "longitude": 135.779432
+  },
+  {
+    "name": "NTT西日本 七条別館",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.990339,
+    "longitude": 135.762865
+  },
+  {
+    "name": "NTT西日本 京都御前ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.004365,
+    "longitude": 135.73605
+  },
+  {
+    "name": "NTT西日本 京都支店",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.008707,
+    "longitude": 135.760415
+  },
+  {
+    "name": "NTT品川ビル",
+    "operator": "ドコモ・バイクシェア",
+    "latitude": 35.611878,
+    "longitude": 139.747725
+  },
+  {
+    "name": "NTT大瀬戸",
+    "operator": "長崎バス",
+    "latitude": 32.938996,
+    "longitude": 129.6399428
+  },
+  {
+    "name": "NTTドコモ本社セルフコンビニ",
+    "operator": "AIM Services",
+    "latitude": 35.6731077,
+    "longitude": 139.7408665
+  },
+  {
+    "name": "NTT docomo 本社",
+    "operator": "NTT",
+    "latitude": 35.673166,
+    "longitude": 139.7405892
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.7904478,
+    "longitude": 140.0208576
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7946172,
+    "longitude": 135.5551767
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.741135,
+    "longitude": 135.7644462
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6879521,
+    "longitude": 133.9499438
+  },
+  {
+    "name": "NTT西日本菊池営業所",
+    "operator": "NTT",
+    "latitude": 32.979742,
+    "longitude": 130.8087376
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7289827,
+    "longitude": 139.4779867
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.5434058,
+    "longitude": 133.6698381
+  },
+  {
+    "name": "NTTフィールドテクノ",
+    "operator": "NTT",
+    "latitude": 33.7481052,
+    "longitude": 129.6899016
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.7200772,
+    "longitude": 134.1921101
+  },
+  {
+    "name": "NTT東日本",
+    "operator": "東日本電信電話株式会社",
+    "latitude": 35.693183,
+    "longitude": 139.8267889
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6364685,
+    "longitude": 135.5882383
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6336861,
+    "longitude": 135.6099056
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.4198563,
+    "longitude": 135.3308274
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6361514,
+    "longitude": 135.6395299
+  },
+  {
+    "name": "T-015.NTT小雀ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.374791,
+    "longitude": 139.508775
+  },
+  {
+    "name": "T-009.NTT戸塚支店ビル",
+    "operator": "OpenStreet",
+    "latitude": 35.398605,
+    "longitude": 139.532613
+  },
+  {
+    "name": "S-011.NTT瀬谷ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.46555,
+    "longitude": 139.481385
+  },
+  {
+    "name": "M-002.NTT長津田ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.530251,
+    "longitude": 139.500037
+  },
+  {
+    "name": "A-006.NTT希望ヶ丘ビル",
+    "operator": "HELLO CYCLING",
+    "latitude": 35.461693,
+    "longitude": 139.512063
+  },
+  {
+    "name": "NTT西日本奈良三条ビル",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.681915,
+    "longitude": 135.825142
+  },
+  {
+    "name": "NTT西日本岡山支店",
+    "operator": "Docomo Bike Share",
+    "latitude": 34.661529,
+    "longitude": 133.926462
+  },
+  {
+    "name": "NTT中央研修センタ体育館駐車場内",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.650306,
+    "longitude": 139.589518
+  },
+  {
+    "name": "NTT中央研修センタロータリー前",
+    "operator": "Docomo Bike Share",
+    "latitude": 35.650831,
+    "longitude": 139.587835
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 24.2742639,
+    "longitude": 123.8789127
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.587764,
+    "longitude": 135.4822215
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7501479,
+    "longitude": 139.4212207
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7029723,
+    "longitude": 139.4215632
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.7143739,
+    "longitude": 139.5184868
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.6423993,
+    "longitude": 139.5378706
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6596471,
+    "longitude": 133.9399539
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 38.333938,
+    "longitude": 140.6130516
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6952416,
+    "longitude": 133.87163
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.5821308,
+    "longitude": 139.6505493
+  },
+  {
+    "name": "NTT西日本 岡山健康管理センタ",
+    "operator": "NTT",
+    "latitude": 34.6632984,
+    "longitude": 133.9234126
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 34.6661204,
+    "longitude": 134.091651
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.0820728,
+    "longitude": 137.0808394
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.0813339,
+    "longitude": 137.0796717
+  },
+  {
+    "name": "NTT西日本",
+    "operator": "西日本電信電話株式会社",
+    "latitude": 35.0806889,
+    "longitude": 137.06542
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.0306065,
+    "longitude": 141.3592772
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 43.0319934,
+    "longitude": 141.3597677
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 36.575038,
+    "longitude": 136.6658401
+  },
+  {
+    "name": "NTT",
+    "operator": "NTT",
+    "latitude": 35.593852,
+    "longitude": 138.5215527
+  },
+  {
+    "name": "NTTル・パルク",
+    "operator": "NTTル・パルク",
+    "latitude": 35.571092,
+    "longitude": 139.6873495
+  }
+]

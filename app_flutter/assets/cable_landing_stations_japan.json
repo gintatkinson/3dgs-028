@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Chikura Cable Landing Station",
+    "name_ja": "千倉海底ケーブル陸揚局",
+    "query": "Chikura, Chiba, Japan",
+    "latitude": 34.9767161,
+    "longitude": 139.9546792
+  },
+  {
+    "name": "Minamiboso Cable Landing Station",
+    "name_ja": "南房総海底ケーブル陸揚局",
+    "query": "Minamiboso, Chiba, Japan",
+    "latitude": 35.0387486,
+    "longitude": 139.8371399
+  },
+  {
+    "name": "Wada Cable Landing Station",
+    "name_ja": "和田海底ケーブル陸揚局",
+    "query": "Wada, Chiba, Japan",
+    "latitude": 35.0377356,
+    "longitude": 140.0172905
+  },
+  {
+    "name": "Emi Cable Landing Station",
+    "name_ja": "江見海底ケーブル陸揚局",
+    "query": "Emi, Chiba, Japan",
+    "latitude": 35.062414,
+    "longitude": 140.0613872
+  },
+  {
+    "name": "Kamogawa Cable Landing Station",
+    "name_ja": "鴨川海底ケーブル陸揚局",
+    "query": "Kamogawa, Chiba, Japan",
+    "latitude": 35.1140584,
+    "longitude": 140.098692
+  },
+  {
+    "name": "Maruyama Cable Landing Station",
+    "name_ja": "丸山海底ケーブル陸揚局",
+    "query": "Maruyama, Chiba, Japan",
+    "latitude": 35.0782692,
+    "longitude": 139.9664886
+  },
+  {
+    "name": "Shima Cable Landing Station (NTT)",
+    "name_ja": "志摩海底ケーブル陸揚局 (NTT)",
+    "query": "Agocho Anori, Shima, Mie, Japan",
+    "latitude": 34.3578919,
+    "longitude": 136.8949592
+  },
+  {
+    "name": "Shima Cable Landing Station (KDDI)",
+    "name_ja": "志摩海底ケーブル陸揚局 (KDDI)",
+    "query": "Shima, Mie, Japan",
+    "latitude": 34.3411841,
+    "longitude": 136.8196451
+  },
+  {
+    "name": "Toyohashi Cable Landing Station",
+    "name_ja": "豊橋海底ケーブル陸揚局",
+    "query": "Hosoyacho, Toyohashi, Aichi, Japan",
+    "latitude": 34.6891047,
+    "longitude": 137.4643919
+  },
+  {
+    "name": "Ninomiya Cable Landing Station",
+    "name_ja": "二宮海底ケーブル陸揚局",
+    "query": "Yamanishi, Ninomiya, Kanagawa, Japan",
+    "latitude": 35.2938695,
+    "longitude": 139.2460216
+  },
+  {
+    "name": "Miura Cable Landing Station",
+    "name_ja": "三浦海底ケーブル陸揚局",
+    "query": "Miura, Kanagawa, Japan",
+    "latitude": 35.1441984,
+    "longitude": 139.6207589
+  },
+  {
+    "name": "Takahagi Cable Landing Station",
+    "name_ja": "高萩海底ケーブル陸揚局",
+    "query": "Takahagi, Ibaraki, Japan",
+    "latitude": 36.7199765,
+    "longitude": 140.7158414
+  },
+  {
+    "name": "Kitaibaraki Cable Landing Station",
+    "name_ja": "北茨城海底ケーブル陸揚局",
+    "query": "Kitaibaraki, Ibaraki, Japan",
+    "latitude": 36.8018507,
+    "longitude": 140.7513188
+  },
+  {
+    "name": "Ajigaura Cable Landing Station",
+    "name_ja": "阿字ヶ浦海底ケーブル陸揚局",
+    "query": "Ajigaura, Hitachinaka, Ibaraki, Japan",
+    "latitude": 36.3836175,
+    "longitude": 140.6123681
+  },
+  {
+    "name": "Ishikari Cable Landing Station",
+    "name_ja": "石狩海底ケーブル陸揚局",
+    "query": "Ishikari, Hokkaido, Japan",
+    "latitude": 43.171677,
+    "longitude": 141.3159605
+  },
+  {
+    "name": "Tomakomai Cable Landing Station",
+    "name_ja": "苫小牧海底ケーブル陸揚局",
+    "query": "Tomakomai, Hokkaido, Japan",
+    "latitude": 42.6341039,
+    "longitude": 141.6054899
+  },
+  {
+    "name": "Naoetsu Cable Landing Station",
+    "name_ja": "直江津海底ケーブル陸揚局",
+    "query": "Naoetsu, Niigata, Japan",
+    "latitude": 37.170264,
+    "longitude": 138.2422616
+  },
+  {
+    "name": "Itoshima Cable Landing Station",
+    "name_ja": "糸島海底ケーブル陸揚局",
+    "query": "Itoshima, Fukuoka, Japan",
+    "latitude": 33.5571816,
+    "longitude": 130.196231
+  },
+  {
+    "name": "Miyazaki Cable Landing Station",
+    "name_ja": "宮崎海底ケーブル陸揚局",
+    "query": "Miyazaki, Japan",
+    "latitude": 32.097681,
+    "longitude": 131.294542
+  },
+  {
+    "name": "Fukuoka Cable Landing Station",
+    "name_ja": "福岡海底ケーブル陸揚局",
+    "query": "Fukuoka, Japan",
+    "latitude": 33.6251241,
+    "longitude": 130.6180016
+  },
+  {
+    "name": "Kitakyushu Cable Landing Station",
+    "name_ja": "北九州海底ケーブル陸揚局",
+    "query": "Kitakyushu, Fukuoka, Japan",
+    "latitude": 33.8829996,
+    "longitude": 130.8749015
+  },
+  {
+    "name": "Okinawa Cable Landing Station",
+    "name_ja": "沖縄海底ケーブル陸揚局",
+    "query": "Okinawa, Japan",
+    "latitude": 26.5707754,
+    "longitude": 128.0255901
+  }
+]

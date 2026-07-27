@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "schema_name": "ietf-geo-location@2022-02-11",
+    "yang_source": "/Users/perkunas/jail/3dgs-028/schema/ietf-geo-location@2022-02-11.yang"
+  },
+  "theme": {
+    "modes": [
+      "light",
+      "dark",
+      "system"
+    ]
+  },
+  "navigation": {
+    "sidebar": {
+      "collapsible": true,
+      "default_expanded": true
+    }
+  },
+  "layout": {
+    "root_container": {
+      "type": "SidebarLayout",
+      "id": "main_shell",
+      "children": [
+        {
+          "type": "HierarchyTree",
+          "id": "resource_tree",
+          "props": {
+            "hierarchy": [
+              {
+                "id": "geo-location",
+                "label": "Geo Location",
+                "children": [
+                  {
+                    "id": "reference-frame",
+                    "label": "Reference Frame",
+                    "children": [
+                      {
+                        "id": "geodetic-system",
+                        "label": "Geodetic System"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "velocity",
+                    "label": "Velocity"
+                  }
+                ]
+              }
+            ]
+          },
+          "bindings": {
+            "selection_target": "selected_managed_object"
+          }
+        },
+        {
+          "type": "ResizableSplitter",
+          "id": "workspace_split",
+          "props": {
+            "axis": "horizontal",
+            "resizable": true
+          },
+          "children": [
+            {
+              "type": "TopologyMap",
+              "id": "topology_pane"
+            },
+            {
+              "type": "ResizableSplitter",
+              "id": "lower_split",
+              "props": {
+                "axis": "horizontal",
+                "resizable": true
+              },
+              "children": [
+                {
+                  "type": "DensityTable",
+                  "id": "elements_view"
+                },
+                {
+                  "type": "TabbedContainer",
+                  "id": "details_and_relations_tab",
+                  "children": [
+                    {
+                      "type": "TableView",
+                      "id": "components_table",
+                      "props": {
+                        "label": "token:layout.labels.components"
+                      }
+                    },
+                    {
+                      "type": "TableView",
+                      "id": "relation_a_table",
+                      "props": {
+                        "label": "token:layout.labels.relation_a"
+                      }
+                    },
+                    {
+                      "type": "TableView",
+                      "id": "relation_b_table",
+                      "props": {
+                        "label": "token:layout.labels.relation_b"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attributes": [
+    {
+      "key": "geo-location/reference-frame/alternate-system",
+      "label": "Alternate System",
+      "type": "string",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/reference-frame/astronomical-body",
+      "label": "Astronomical Body",
+      "type": "string",
+      "sectionGroup": "geo-location",
+      "isRequired": false,
+      "pattern": "[ -@\\[-\\^_-~]*"
+    },
+    {
+      "key": "geo-location/reference-frame/geodetic-system/geodetic-datum",
+      "label": "Geodetic Datum",
+      "type": "string",
+      "sectionGroup": "geo-location",
+      "isRequired": false,
+      "pattern": "[ -@\\[-\\^_-~]*"
+    },
+    {
+      "key": "geo-location/reference-frame/geodetic-system/coord-accuracy",
+      "label": "Coord Accuracy",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/reference-frame/geodetic-system/height-accuracy",
+      "label": "Height Accuracy",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/latitude",
+      "label": "Latitude",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/longitude",
+      "label": "Longitude",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/height",
+      "label": "Height",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/x",
+      "label": "X",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/y",
+      "label": "Y",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/z",
+      "label": "Z",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/velocity/v-north",
+      "label": "V North",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/velocity/v-east",
+      "label": "V East",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/velocity/v-up",
+      "label": "V Up",
+      "type": "double",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/timestamp",
+      "label": "Timestamp",
+      "type": "string",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    },
+    {
+      "key": "geo-location/valid-until",
+      "label": "Valid Until",
+      "type": "string",
+      "sectionGroup": "geo-location",
+      "isRequired": false
+    }
+  ]
+}

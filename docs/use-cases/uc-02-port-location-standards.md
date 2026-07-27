@@ -48,7 +48,62 @@ An external system or application requests geographic location data in a format 
   2. The YANG grouping stores absolute heights, not relative heights.
   3. The Integration System requires additional ground-level elevation data to convert the absolute height to a relative height.
   4. If ground-level data is unavailable, the Integration System returns the height in absolute mode only.
-- **5d. Precision Loss During Mapping (Branches from Basic Flow step 5):**
+- **5e. IETF URI Parameter Overflow (Branches from Basic Flow step 5):**
+  1. The IETF URI format uses string representation; the decimal64 value is encoded as a string.
+  2. The URI length may exceed practical URL limits for very high-precision values.
+  3. The Integration System truncates to reasonable precision and logs a warning.
+- **5f. W3C Heading Undefined for Stationary (Branches from Basic Flow step 5):**
+  1. The velocity vector has zero v-north and v-east.
+  2. The W3C Geolocation API `heading` attribute is set to NaN.
+  3. The Integration System returns the API response with heading=NaN and speed=0.
+- **5g. GML CRS Attribute Missing Datum (Branches from Basic Flow step 5):**
+  1. The geo-location lacks an explicit `geodetic-datum`.
+  2. The GML `srsName` attribute defaults to "urn:ogc:def:crs:EPSG::4326" for Earth WGS-84.
+  3. If the body is not Earth, the Integration System returns an error requiring datum.
+- **5h. KML Altitude Mode Absolute (Branches from Basic Flow step 5):**
+  1. The KML consumer requests `absolute` altitude mode.
+  2. The YANG grouping height is an absolute value within the geodetic datum.
+  3. The Integration System maps the height directly as `kml:altitude`.
+- **5i. KML Altitude Mode ClampToGround (Branches from Basic Flow step 5):**
+  1. The KML consumer requests `clampToGround` altitude mode.
+  2. The height value is ignored in this mode.
+  3. The Integration System returns the KML output with altitudeMode=clampToGround.
+- **5j. W3C AltitudeAccuracy Unavailable (Branches from Basic Flow step 5):**
+  1. The geo-location has no `height-accuracy` value.
+  2. The W3C API `altitudeAccuracy` attribute is set to null.
+  3. The Integration System returns the API response without height accuracy.
+- **5k. GML TimePeriod Mapping (Branches from Basic Flow step 5):**
+  1. The geo-location has both `timestamp` and `valid-until` set.
+  2. GML supports `gml:TimePeriod` with begin and end positions.
+  3. The Integration System maps timestamp to beginPosition and valid-until to endPosition.
+- **5l. GML TimeInstant Mapping (Branches from Basic Flow step 5):**
+  1. The geo-location has only `timestamp` with no `valid-until`.
+  2. GML supports `gml:TimeInstant` for point-in-time measurements.
+  3. The Integration System maps timestamp to gml:timePosition.
+- **5m. KML LonLat84 CRS (Branches from Basic Flow step 5):**
+  1. The geo-location uses the default "wgs-84" geodetic-datum.
+  2. KML uses the "LonLat84_5773" CRS identifier per ISO 19136 Annex A.
+  3. The Integration System translates the datum to the KML-compliant CRS identifier.
+- **5n. Decimal64 to Double Precision Loss (Branches from Basic Flow step 5):**
+  1. The YANG latitude uses decimal64 with 16 fraction digits.
+  2. W3C and GML use IEEE 754 double which has approximately 15-17 significant decimal digits.
+  3. The Integration System logs a precision warning if the decimal64 value exceeds double precision.
+- **5o. Geodetic Datum Not in GML Registry (Branches from Basic Flow step 5):**
+  1. The geo-location uses a non-standard geodetic-datum not in the EPSG registry.
+  2. GML requires a CRS identifier resolvable via URN.
+  3. The Integration System returns an error or uses a custom CRS namespace.
+- **5p. Coordinate Accuracy Unit Ambiguity (Branches from Basic Flow step 5):**
+  1. The YANG `coord-accuracy` is unitless but implied meters.
+  2. IETF geo URI `u` parameter is explicitly in meters.
+  3. The Integration System maps coord-accuracy to the `u` parameter directly.
+- **5q. Empty Timestamp Mapping to W3C (Branches from Basic Flow step 5):**
+  1. The geo-location has no `timestamp` value.
+  2. The W3C API requires a DOMTimeStamp (milliseconds since UNIX epoch).
+  3. The Integration System returns timestamp=0 (epoch) with a note that timestamp was unavailable.
+- **5r. Forward Slash in Body Name for GML (Branches from Basic Flow step 3):**
+  1. The astronomical-body is "67p/churyumov-gerasimenko" (contains forward slash).
+  2. GML CRS URIs may not support forward slashes in all contexts.
+  3. The Integration System percent-encodes the body name or returns an error.
   1. The YANG grouping uses `decimal64` values with up to 16 fraction digits for latitude/longitude.
   2. The target standard uses `double` or string representations with potentially different precision.
   3. The Integration System maps the values with best-effort precision preservation and logs a warning if precision may be affected.

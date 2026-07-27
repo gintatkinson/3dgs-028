@@ -97,6 +97,8 @@ classDiagram
     GeoLocation *-- ReferenceFrame
     GeoLocation *-- Location
     GeoLocation *-- VelocityVector
+    GeoLocation ..> Datastore : uses
+    GeoLocation ..> SystemClock : uses
 ```
 
 ## Interface Requirements

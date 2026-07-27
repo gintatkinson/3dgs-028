@@ -54,6 +54,46 @@ A space mission planner or celestial navigation system needs to configure the re
   1. The Planner sets `astronomical-body` to a novel body (e.g., a newly discovered asteroid) that has no established geodetic-datum.
   2. The Planner omits `geodetic-datum` entirely.
   3. The system stores the location without a datum; consumers must define coordinate meaning externally.
+- **5e. Non-ASCII Characters in Body Name (Branches from Basic Flow step 2):**
+  1. The Planner attempts to use Unicode characters in the astronomical-body name.
+  2. The pattern constraint restricts to ASCII 32-64 and 91-126.
+  3. The system rejects the value; the Planner uses ASCII transliteration.
+- **5f. Coordinate Accuracy with Non-Earth Datum (Branches from Basic Flow step 6):**
+  1. The Planner sets coord-accuracy for a non-Earth body with limited measurement data.
+  2. The system stores the accuracy without validating against body-specific precision limits.
+  3. The Planner relies on known measurement error characteristics.
+- **5g. Temporal Expiration on Non-Earth Location (Branches from Basic Flow step 7):**
+  1. The Planner sets valid-until for a Mars-based location.
+  2. The temporal semantics are identical regardless of astronomical body.
+  3. The system stores the expiration timestamp with standard date-and-time format.
+- **5h. IAU Name Preceding "the" (Branches from Basic Flow step 2):**
+  1. The Planner sets astronomical-body to "the moon" instead of "moon".
+  2. The schema accepts the value; the pattern allows spaces and lowercase letters.
+  3. The Planner is advised per RFC 9179 that preceding "the" SHOULD NOT be included.
+- **5i. Comet Designation Format (Branches from Basic Flow step 2):**
+  1. The Planner sets astronomical-body to a comet designation like "1p/halley".
+  2. The forward slash and number-letter format is within ASCII range.
+  3. The system accepts the value and uses it for the cometary reference frame.
+- **5j. Mars Coordinate Range Clarification (Branches from Basic Flow step 7):**
+  1. The Planner provides Mars latitude/longitude in decimal degrees.
+  2. Mars uses the same [-90,+90] and [-180,+180] angular conventions as Earth.
+  3. The system stores without Mars-specific validation; interpretation is consistent.
+- **5k. Asteroid Without Established Datum (Branches from Basic Flow step 4):**
+  1. The Planner sets astronomical-body to "ceres" without a registered datum.
+  2. The Planner omits geodetic-datum or uses a descriptive ad-hoc value.
+  3. The system stores the configuration; interoperability requires external agreement.
+- **5l. Alternate System Simulation Parameters (Branches from Basic Flow step 5b):**
+  1. The Planner configures alternate-system for a physics simulation.
+  2. The alternate-system string identifies the simulation runtime and version.
+  3. All coordinate values are interpreted within the simulation's coordinate framework.
+- **5m. Venus Retrograde Rotation (Branches from Basic Flow step 7):**
+  1. The Planner sets astronomical-body to "venus" which has retrograde rotation.
+  2. The definition of true north and east directions may differ from Earth conventions.
+  3. The geodetic-datum specification must define the rotational reference for Venus.
+- **5n. Forward Slash Body Name in IAU (Branches from Basic Flow step 2):**
+  1. The Planner uses a forward slash in the body name.
+  2. The character is within the permitted ASCII range (code 47 solidus).
+  3. The system accepts the value with the slash preserved.
 
 ## 6. Postconditions (Guarantees)
 - **Success Guarantee:** The non-Earth reference frame is fully configured with a valid astronomical body name (IAU-compliant), a registered or descriptive geodetic datum, and optional accuracy parameters. Location coordinates subsequently recorded under this reference frame are semantically unambiguous.

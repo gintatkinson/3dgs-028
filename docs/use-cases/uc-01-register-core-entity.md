@@ -53,6 +53,78 @@ A network operator or automated system initiates the creation of a new network e
   1. The NMS attempts to set the `alternate-system` leaf when the device does not support the `alternate-systems` feature.
   2. The system rejects the operation because the leaf is conditionally unavailable.
   3. The NMS retries without specifying the alternate-system value.
+- **5e. Invalid Timestamp Format (Branches from Basic Flow step 5):**
+  1. The NMS provides a timestamp value not conforming to `yang:date-and-time` format.
+  2. The system rejects the value with a schema violation error.
+  3. The NMS corrects to ISO 8601 format and retries.
+- **5f. Expired Validity Before Registration (Branches from Basic Flow step 6):**
+  1. The NMS sets `valid-until` chronologically before the `timestamp`.
+  2. The system stores but logs a warning about inverted temporal relationship.
+  3. The NMS is alerted to the inconsistency.
+- **5g. Negative Coordinate Accuracy (Branches from Basic Flow step 3):**
+  1. The NMS provides a negative value for `coord-accuracy`.
+  2. The system stores the value but logs a warning.
+  3. The NMS corrects to a positive accuracy value.
+- **5h. Height Accuracy on Cartesian (Branches from Basic Flow step 4):**
+  1. The NMS sets `height-accuracy` while using Cartesian coordinates.
+  2. The system stores but notes height-accuracy is not applicable.
+  3. The NMS is informed of the redundancy.
+- **5i. Empty Astronomical Body String (Branches from Basic Flow step 3):**
+  1. The NMS sets `astronomical-body` to an empty string.
+  2. The system stores the empty value; consumers fall back to default "earth".
+  3. The NMS may explicitly set the intended body.
+- **5j. Unregistered Alternate System Value (Branches from Basic Flow step 3):**
+  1. The NMS specifies an unrecognized `alternate-system`.
+  2. The system accepts any string value without registry validation.
+  3. The definition must be agreed externally between producers and consumers.
+- **5k. Mixed Case Geodetic Datum (Branches from Basic Flow step 3):**
+  1. The NMS sets `geodetic-datum` to "WGS-84" instead of "wgs-84".
+  2. The pattern allows uppercase; the system stores the raw value.
+  3. The NMS is advised to normalize to lowercase per IANA rules.
+- **5l. Space in Geodetic Datum (Branches from Basic Flow step 3):**
+  1. The NMS sets `geodetic-datum` to "wgs 84" with spaces.
+  2. The system stores the value; the schema pattern permits spaces.
+  3. The NMS is advised to replace spaces with dashes per IANA rules.
+- **5m. Latitude Out of Range (Branches from Basic Flow step 4):**
+  1. The NMS provides a `latitude` of 95.0 degrees for Earth.
+  2. The schema does not enforce the [-90, +90] range at the type level.
+  3. Application-layer validation rejects or flags the out-of-range value.
+- **5n. Longitude Out of Range (Branches from Basic Flow step 4):**
+  1. The NMS provides a `longitude` of 200.0 degrees.
+  2. The schema does not enforce [-180, +180] at the type level.
+  3. The application must validate and reject out-of-range values.
+- **5o. Single Cartesian Component (Branches from Basic Flow step 4):**
+  1. The NMS provides only `x` without `y` and `z`.
+  2. The schema allows partial Cartesian data; the system stores it.
+  3. Consumers requiring 3D treat this as a degraded location.
+- **5p. Precision Truncation on Coordinate (Branches from Basic Flow step 4):**
+  1. The NMS provides a latitude with more than 16 fractional digits.
+  2. The decimal64 type truncates to 16 fraction digits.
+  3. A precision loss notification is logged; the rounded value is stored.
+- **5q. Negative Cartesian Coordinate (Branches from Basic Flow step 4):**
+  1. The NMS provides a negative `x` coordinate for ECEF.
+  2. The system accepts negative values; Cartesian coordinates are signed.
+  3. The location is correctly stored.
+- **5r. Zero Velocity Stationary Object (Branches from Basic Flow step 7):**
+  1. The NMS sets all velocity components to zero.
+  2. The system stores the zero vector indicating stationary state.
+  3. Consumers compute speed=0 and heading=undefined.
+- **5s. Extreme Velocity Value (Branches from Basic Flow step 7):**
+  1. The NMS provides a velocity near the decimal64 maximum range.
+  2. The system stores the value if within representable range.
+  3. Values exceeding maximum are rejected with a range error.
+- **5t. Mismatched Non-Earth Range (Branches from Basic Flow step 3):**
+  1. The NMS sets `astronomical-body` to "mars" without defining valid ranges.
+  2. The system stores coordinates without Mars-specific range validation.
+  3. Consumers must apply body-specific interpretations externally.
+- **5u. Config Commit Failure (Branches from Basic Flow step 8):**
+  1. The system encounters a datastore write error during commit.
+  2. The system rolls back to the previous valid state.
+  3. The NMS receives an error response and retries.
+- **5v. Read-Only Location Modification (Branches from Basic Flow step 2):**
+  1. The NMS attempts to modify a read-only geo-location per RFC 8341.
+  2. The system rejects with an authorization error.
+  3. The NMS escalates for elevated permissions if required.
 
 ## 6. Postconditions (Guarantees)
 - **Success Guarantee:** A complete or partial geo-location container is persisted in the device configuration with all provided attribute values validated against schema constraints. The location can be queried via standard management protocols.

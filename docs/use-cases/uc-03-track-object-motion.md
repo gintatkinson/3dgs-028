@@ -55,6 +55,30 @@ A fleet tracking system or telemetry collector requests motion data for a tracke
   1. The geo-location entity does not have a velocity container (the object is assumed stationary or velocity tracking is not enabled).
   2. The Tracking System reports only position data without velocity-derived metrics.
   3. The system may suggest enabling velocity tracking for future readings.
+- **5f. Vertical Motion Only (Branches from Basic Flow step 3):**
+  1. v-north and v-east are zero, but v-up is non-zero.
+  2. The object is moving purely vertically (e.g., ascending or descending).
+  3. Speed and heading are reported as 0 and undefined; v-up is reported separately.
+- **5g. Negative v-north (Branches from Basic Flow step 4):**
+  1. v-north is negative (southward motion).
+  2. The heading formula produces correct results: heading between 90 and 270 degrees.
+  3. The system reports heading with southward cardinal direction metadata.
+- **5h. Both Components Negative (Branches from Basic Flow step 4):**
+  1. Both v-north and v-east are negative (southwest motion).
+  2. The arctan function with both negative produces correct quadrant adjustment.
+  3. The system reports heading in the third quadrant (180-270 degrees).
+- **5i. Precision Loss on Velocity Squaring (Branches from Basic Flow step 3):**
+  1. Very small velocity values are squared in the speed formula.
+  2. The squaring may cause underflow for values near the decimal64 minimum.
+  3. The system uses extended precision arithmetic and returns 0 if underflow occurs.
+- **5j. Timestamp Mismatch with Velocity (Branches from Basic Flow step 1):**
+  1. The timestamp was updated but the velocity was not.
+  2. The velocity is stale relative to the position data.
+  3. The system flags the velocity as potentially outdated and reports the timestamp mismatch.
+- **5k. Non-Earth True North (Branches from Basic Flow step 4):**
+  1. The reference frame uses a non-Earth astronomical body.
+  2. True north is defined by the body's rotational axis, not Earth's geographic north.
+  3. The system reports heading relative to the body's true north with body name annotation.
 
 ## 6. Postconditions (Guarantees)
 - **Success Guarantee:** A complete motion state report is generated containing position, speed (m/s), heading (degrees from true north), and vertical velocity component (v-up). All derived values are computed with decimal64 precision. Edge cases (stationary, cardinal directions) are handled explicitly.

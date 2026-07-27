@@ -58,6 +58,622 @@ class DomainSeedStrategy implements SeedStrategy {
       'is_required': 0,
     }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
+    // 1a. Seed NetworkInventoryLocation type definition and attributes
+    // (type_relation is deferred to after the Components loop to satisfy FK ordering)
+    batch.insert('type_definitions', {
+      'type_name': 'NetworkInventoryLocation',
+      'display_name': 'Network Inventory Location',
+      'icon_name': 'business',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'id',
+      'label': 'ID',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 0,
+      'is_required': 1,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'uuid',
+      'label': 'UUID',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'name',
+      'label': 'Name',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'alias',
+      'label': 'Alias',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 3,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'description',
+      'label': 'Description',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 4,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'type',
+      'label': 'Type',
+      'attr_type': 'string',
+      'section_label': 'Classification',
+      'section_order': 0,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'parent',
+      'label': 'Parent',
+      'attr_type': 'string',
+      'section_label': 'Classification',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'timestamp',
+      'label': 'Timestamp',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NetworkInventoryLocation',
+      'attr_key': 'valid_until',
+      'label': 'Valid Until',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // 1b2. Seed NI_GeoLocation type definition, attributes, and relation to
+    // NetworkInventoryLocation
+    batch.insert('type_definitions', {
+      'type_name': 'NI_GeoLocation',
+      'display_name': 'Geographic Location',
+      'icon_name': 'public',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'timestamp',
+      'label': 'Timestamp',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'valid_until',
+      'label': 'Valid Until',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'astronomical_body',
+      'label': 'Astronomical Body',
+      'attr_type': 'string',
+      'section_label': 'Geo-Location',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^[ -@\[-\^_-~]*$',
+      'default_value': 'earth',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'geodetic_datum',
+      'label': 'Geodetic Datum',
+      'attr_type': 'string',
+      'section_label': 'Geo-Location',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^[ -@\[-\^_-~]*$',
+      'default_value': 'wgs-84',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'latitude',
+      'label': 'Latitude',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 2,
+      'is_required': 0,
+      'min_value': -90,
+      'max_value': 90,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'longitude',
+      'label': 'Longitude',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 3,
+      'is_required': 0,
+      'min_value': -180,
+      'max_value': 180,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'height',
+      'label': 'Height',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 4,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'x',
+      'label': 'X',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 5,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'y',
+      'label': 'Y',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 6,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'z',
+      'label': 'Z',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 7,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'v_north',
+      'label': 'V North (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 8,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'v_east',
+      'label': 'V East (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 9,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'NI_GeoLocation',
+      'attr_key': 'v_up',
+      'label': 'V Up (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Geo-Location',
+      'section_order': 10,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'NetworkInventoryLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'NI_GeoLocation',
+      'child_label': 'Geographic Location',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // 1c. Seed PhysicalAddress type definition, attributes, and relation to
+    // NetworkInventoryLocation
+    batch.insert('type_definitions', {
+      'type_name': 'PhysicalAddress',
+      'display_name': 'Physical Address',
+      'icon_name': 'home',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'PhysicalAddress',
+      'attr_key': 'address',
+      'label': 'Address',
+      'attr_type': 'string',
+      'section_label': 'Address',
+      'section_order': 0,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'PhysicalAddress',
+      'attr_key': 'postal_code',
+      'label': 'Postal Code',
+      'attr_type': 'string',
+      'section_label': 'Address',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'PhysicalAddress',
+      'attr_key': 'state',
+      'label': 'State',
+      'attr_type': 'string',
+      'section_label': 'Address',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'PhysicalAddress',
+      'attr_key': 'city',
+      'label': 'City',
+      'attr_type': 'string',
+      'section_label': 'Address',
+      'section_order': 3,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'PhysicalAddress',
+      'attr_key': 'country_code',
+      'label': 'Country Code',
+      'attr_type': 'string',
+      'section_label': 'Address',
+      'section_order': 4,
+      'is_required': 0,
+      'pattern': r'^[A-Z]{2}$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'NetworkInventoryLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'PhysicalAddress',
+      'child_label': 'Physical Address',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // 1cz. Seed LocationChassis type definition, attributes, and relation to
+    // NetworkInventoryLocation
+    batch.insert('type_definitions', {
+      'type_name': 'LocationChassis',
+      'display_name': 'Location Chassis',
+      'icon_name': 'dns',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'LocationChassis',
+      'attr_key': 'chassis_id',
+      'label': 'Chassis ID',
+      'attr_type': 'int',
+      'section_label': 'Chassis',
+      'section_order': 0,
+      'is_required': 1,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'LocationChassis',
+      'attr_key': 'ne_ref',
+      'label': 'NE Reference',
+      'attr_type': 'string',
+      'section_label': 'Chassis',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'LocationChassis',
+      'attr_key': 'component_ref',
+      'label': 'Component Reference',
+      'attr_type': 'string',
+      'section_label': 'Chassis',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'NetworkInventoryLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'LocationChassis',
+      'child_label': 'Location Chassis',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // 1d. Seed RackEntity type definition, attributes, and relation to Components
+    batch.insert('type_definitions', {
+      'type_name': 'RackEntity',
+      'display_name': 'Rack Entity',
+      'icon_name': 'warehouse',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'id',
+      'label': 'ID',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 0,
+      'is_required': 1,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'rack_class',
+      'label': 'Rack Class',
+      'attr_type': 'enum',
+      'section_label': 'Classification',
+      'section_order': 0,
+      'is_required': 0,
+      'enum_options': jsonEncode([
+        'rack-standard',
+        'rack-secure-baseline',
+        'rack-secure-medium',
+        'rack-secure-high',
+      ]),
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'uuid',
+      'label': 'UUID',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'name',
+      'label': 'Name',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'alias',
+      'label': 'Alias',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 3,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'description',
+      'label': 'Description',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 4,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'height',
+      'label': 'Height (mm)',
+      'attr_type': 'int',
+      'section_label': 'Dimensions',
+      'section_order': 0,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'width',
+      'label': 'Width (mm)',
+      'attr_type': 'int',
+      'section_label': 'Dimensions',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'depth',
+      'label': 'Depth (mm)',
+      'attr_type': 'int',
+      'section_label': 'Dimensions',
+      'section_order': 2,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'max_voltage',
+      'label': 'Max Voltage (V)',
+      'attr_type': 'int',
+      'section_label': 'Power',
+      'section_order': 0,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'max_allocated_power',
+      'label': 'Max Allocated Power (W)',
+      'attr_type': 'int',
+      'section_label': 'Power',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'timestamp',
+      'label': 'Timestamp',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackEntity',
+      'attr_key': 'valid_until',
+      'label': 'Valid Until',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // 1e. Seed RackPlacement type definition, attributes, and relation to RackEntity
+    batch.insert('type_definitions', {
+      'type_name': 'RackPlacement',
+      'display_name': 'Rack Placement',
+      'icon_name': 'grid_on',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackPlacement',
+      'attr_key': 'location_ref',
+      'label': 'Location Reference',
+      'attr_type': 'string',
+      'section_label': 'Placement',
+      'section_order': 0,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackPlacement',
+      'attr_key': 'row_number',
+      'label': 'Row Number',
+      'attr_type': 'int',
+      'section_label': 'Placement',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 4294967295,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackPlacement',
+      'attr_key': 'column_number',
+      'label': 'Column Number',
+      'attr_type': 'int',
+      'section_label': 'Placement',
+      'section_order': 2,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 4294967295,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'RackEntity',
+      'relation_name': 'contains',
+      'child_type_name': 'RackPlacement',
+      'child_label': 'Rack Placement',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // 1e2. Seed RackChassis type definition, attributes, and relation to
+    // RackEntity
+    batch.insert('type_definitions', {
+      'type_name': 'RackChassis',
+      'display_name': 'Rack Chassis',
+      'icon_name': 'dns',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackChassis',
+      'attr_key': 'relative_position',
+      'label': 'Relative Position',
+      'attr_type': 'int',
+      'section_label': 'Chassis',
+      'section_order': 0,
+      'is_required': 1,
+      'min_value': 0,
+      'max_value': 255,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackChassis',
+      'attr_key': 'ne_ref',
+      'label': 'NE Reference',
+      'attr_type': 'string',
+      'section_label': 'Chassis',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'RackChassis',
+      'attr_key': 'component_ref',
+      'label': 'Component Reference',
+      'attr_type': 'string',
+      'section_label': 'Chassis',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'RackEntity',
+      'relation_name': 'contains',
+      'child_type_name': 'RackChassis',
+      'child_label': 'Rack Chassis',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
     // 1. Seed base system type definitions and their 50 generic attributes
     for (final d in displayNames.keys) {
       batch.insert('type_definitions', {
@@ -116,10 +732,205 @@ class DomainSeedStrategy implements SeedStrategy {
     }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
     batch.insert('type_relations', {
+      'parent_type_name': 'Components',
+      'relation_name': 'contains',
+      'child_type_name': 'NetworkInventoryLocation',
+      'child_label': 'Network Inventory Location',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'Components',
+      'relation_name': 'contains',
+      'child_type_name': 'RackEntity',
+      'child_label': 'Rack Entity',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
       'parent_type_name': 'GeoLocation',
       'relation_name': 'contains',
       'child_type_name': 'ReferenceFrame',
       'child_label': 'Reference Frame',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // EllipsoidCoordinates type definition, attributes, and relation to GeoLocation
+    batch.insert('type_definitions', {
+      'type_name': 'EllipsoidCoordinates',
+      'display_name': 'Ellipsoid Coordinates',
+      'icon_name': 'language',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'EllipsoidCoordinates',
+      'attr_key': 'latitude',
+      'label': 'Latitude',
+      'attr_type': 'double',
+      'section_label': 'Ellipsoid',
+      'section_order': 0,
+      'is_required': 0,
+      'min_value': -90,
+      'max_value': 90,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'EllipsoidCoordinates',
+      'attr_key': 'longitude',
+      'label': 'Longitude',
+      'attr_type': 'double',
+      'section_label': 'Ellipsoid',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': -180,
+      'max_value': 180,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'EllipsoidCoordinates',
+      'attr_key': 'height',
+      'label': 'Height',
+      'attr_type': 'double',
+      'section_label': 'Ellipsoid',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'GeoLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'EllipsoidCoordinates',
+      'child_label': 'Ellipsoid Coordinates',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // CartesianCoordinates type definition, attributes, and relation to GeoLocation
+    batch.insert('type_definitions', {
+      'type_name': 'CartesianCoordinates',
+      'display_name': 'Cartesian Coordinates',
+      'icon_name': 'grid_on',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'CartesianCoordinates',
+      'attr_key': 'x',
+      'label': 'X',
+      'attr_type': 'double',
+      'section_label': 'Cartesian Location',
+      'section_order': 0,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'CartesianCoordinates',
+      'attr_key': 'y',
+      'label': 'Y',
+      'attr_type': 'double',
+      'section_label': 'Cartesian Location',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'CartesianCoordinates',
+      'attr_key': 'z',
+      'label': 'Z',
+      'attr_type': 'double',
+      'section_label': 'Cartesian Location',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'GeoLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'CartesianCoordinates',
+      'child_label': 'Cartesian Coordinates',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // GeodeticSystem type definition, attributes, and relation to ReferenceFrame
+    batch.insert('type_definitions', {
+      'type_name': 'GeodeticSystem',
+      'display_name': 'Geodetic System',
+      'icon_name': 'gps_fixed',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'GeodeticSystem',
+      'attr_key': 'geodetic_datum',
+      'label': 'Geodetic Datum',
+      'attr_type': 'string',
+      'section_label': 'Geodetic Reference',
+      'is_required': 0,
+      'pattern': r'^[ -@\[-\^_-~]*$',
+      'default_value': 'wgs-84',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'GeodeticSystem',
+      'attr_key': 'coord_accuracy',
+      'label': 'Coordinate Accuracy',
+      'attr_type': 'double',
+      'section_label': 'Geodetic Reference',
+      'is_required': 0,
+      'min_value': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'GeodeticSystem',
+      'attr_key': 'height_accuracy',
+      'label': 'Height Accuracy',
+      'attr_type': 'double',
+      'section_label': 'Geodetic Reference',
+      'is_required': 0,
+      'min_value': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'ReferenceFrame',
+      'relation_name': 'contains',
+      'child_type_name': 'GeodeticSystem',
+      'child_label': 'Geodetic System',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    // VelocityVector type definition and attributes
+    batch.insert('type_definitions', {
+      'type_name': 'VelocityVector',
+      'display_name': 'Velocity Vector',
+      'icon_name': 'speed',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'VelocityVector',
+      'attr_key': 'v_north',
+      'label': 'V North (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Velocity',
+      'section_order': 0,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'VelocityVector',
+      'attr_key': 'v_east',
+      'label': 'V East (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Velocity',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'VelocityVector',
+      'attr_key': 'v_up',
+      'label': 'V Up (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Velocity',
+      'section_order': 2,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'GeoLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'VelocityVector',
+      'child_label': 'Velocity Vector',
     }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
     batch.insert('properties', {

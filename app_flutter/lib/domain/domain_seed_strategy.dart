@@ -29,6 +29,35 @@ class DomainSeedStrategy implements SeedStrategy {
       'Links': 'Links',
     };
 
+    // 0. Seed ReferenceFrame type definition and attributes (relation added after GeoLocation below)
+    batch.insert('type_definitions', {
+      'type_name': 'ReferenceFrame',
+      'display_name': 'Reference Frame',
+      'icon_name': 'explore',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'ReferenceFrame',
+      'attr_key': 'astronomical_body',
+      'label': 'Astronomical Body',
+      'attr_type': 'string',
+      'section_label': 'Frame of Reference',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^[ -@\[-\^_-~]*$',
+      'default_value': 'earth',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_attributes', {
+      'type_name': 'ReferenceFrame',
+      'attr_key': 'alternate_system',
+      'label': 'Alternate System',
+      'attr_type': 'string',
+      'section_label': 'Frame of Reference',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
     // 1. Seed base system type definitions and their 50 generic attributes
     for (final d in displayNames.keys) {
       batch.insert('type_definitions', {
@@ -84,6 +113,13 @@ class DomainSeedStrategy implements SeedStrategy {
       'relation_name': 'contains',
       'child_type_name': 'GeoLocation',
       'child_label': 'Geo Location',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch.insert('type_relations', {
+      'parent_type_name': 'GeoLocation',
+      'relation_name': 'contains',
+      'child_type_name': 'ReferenceFrame',
+      'child_label': 'Reference Frame',
     }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
     batch.insert('properties', {

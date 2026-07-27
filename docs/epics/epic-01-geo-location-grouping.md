@@ -22,10 +22,20 @@ This Epic covers the `ietf-geo-location` YANG module defined in RFC 9179. The mo
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-- [ ] #[IssueID] - [Use Case Title](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-XX-name.md) (semantic linkage justification)
+- [ ] #16 - [Register Core Location Entity](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-01-register-core-entity.md) (end-to-end registration of a location entity)
+- [ ] #17 - [Port Location to External Standards](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-02-port-location-standards.md) (export to IETF URI, W3C, GML, KML)
+- [ ] #18 - [Track Object Motion with Velocity Vector](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-03-track-object-motion.md) (motion tracking and heading/speed computation)
+- [ ] #19 - [Configure Geodetic System for Non-Earth Body](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-04-configure-non-earth-geodetic.md) (celestial body reference frame configuration)
 
 #### Associated User Stories
-- [ ] #[IssueID] - [User Story Title](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-XX-name.md) (semantic linkage justification)
+- [ ] #8 - [Query Location by Timestamp](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-01-query-location-timestamp.md) (temporal location retrieval)
+- [ ] #9 - [Validate Location Freshness](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-02-validate-location-freshness.md) (valid-until expiration management)
+- [ ] #10 - [Compute Speed from Velocity Vector](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-03-compute-speed-velocity.md) (scalar speed derivation)
+- [ ] #11 - [Compute Heading from Velocity Vector](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-04-compute-heading-velocity.md) (compass heading derivation)
+- [ ] #12 - [Select Frame of Reference](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-05-select-reference-frame.md) (astronomical body and datum configuration)
+- [ ] #13 - [Switch Between Ellipsoid and Cartesian Coordinates](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-06-switch-coordinate-systems.md) (coordinate system selection)
+- [ ] #14 - [Handle Expired Location Data](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-07-handle-expired-location.md) (expiration lifecycle management)
+- [ ] #15 - [Nest Locations with Inherited Reference Frame](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-08-nest-locations-inheritance.md) (hierarchical reference frame inheritance)
 
 ## 3. Architecture
 
@@ -36,10 +46,10 @@ The Geo-Location subsystem provides a reusable grouping for specifying geographi
 classDiagram
     class GeoLocationSubsystem {
         <<component>>
-        +setFrameOfReference(input) Boolean
+        +setFrameOfReference(input) Boolean [1]
     }
     class ExternalModule {
-        +String usesGeoLocation
+        +String usesGeoLocation [0..1]
     }
     ExternalModule ..> GeoLocationSubsystem : uses
 ```

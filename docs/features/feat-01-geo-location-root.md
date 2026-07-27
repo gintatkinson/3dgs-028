@@ -24,6 +24,13 @@ classDiagram
     class GeoLocation {
         +String timestamp [0..1]
         -String validUntil [0..1]
+        +getLocation(entityId: String) GeoLocation
+        +queryLocation(entityId: String) GeoLocation
+        +setCartesianLocation(x: Decimal64, y: Decimal64, z: Decimal64) Boolean
+        +getVelocity(entityId: String) VelocityVector
+        +checkExpiration(entityId: String) Boolean
+        +archiveExpiredData(entityId: String) Boolean
+        +getParentLocation(entityId: String) ReferenceFrame
     }
     class ReferenceFrame {
         +String alternateSystem [0..1]

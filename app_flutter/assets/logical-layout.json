@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "1.0.0",
-    "schema_name": "ietf-geo-location@2022-02-11",
-    "yang_source": "/Users/perkunas/jail/3dgs-028/schema/ietf-geo-location@2022-02-11.yang"
+    "schema_name": "ietf-ni-location",
+    "yang_source": "/Users/perkunas/jail/3dgs-028/schema/ietf-ni-location.yang"
   },
   "theme": {
     "modes": [
@@ -28,22 +28,42 @@
           "props": {
             "hierarchy": [
               {
-                "id": "geo-location",
-                "label": "Geo Location",
+                "id": "physical-address",
+                "label": "Physical Address"
+              },
+              {
+                "id": "locations",
+                "label": "Locations",
                 "children": [
                   {
-                    "id": "reference-frame",
-                    "label": "Reference Frame",
+                    "id": "location",
+                    "label": "Location",
                     "children": [
                       {
-                        "id": "geodetic-system",
-                        "label": "Geodetic System"
+                        "id": "contained-chassis",
+                        "label": "Contained Chassis"
                       }
                     ]
-                  },
+                  }
+                ]
+              },
+              {
+                "id": "racks",
+                "label": "Racks",
+                "children": [
                   {
-                    "id": "velocity",
-                    "label": "Velocity"
+                    "id": "rack",
+                    "label": "Rack",
+                    "children": [
+                      {
+                        "id": "rack-location",
+                        "label": "Rack Location"
+                      },
+                      {
+                        "id": "contained-chassis",
+                        "label": "Contained Chassis"
+                      }
+                    ]
                   }
                 ]
               }
@@ -113,117 +133,200 @@
   },
   "attributes": [
     {
-      "key": "geo-location/reference-frame/alternate-system",
-      "label": "Alternate System",
+      "key": "physical-address/address",
+      "label": "Address",
       "type": "string",
-      "sectionGroup": "geo-location",
+      "sectionGroup": "physical-address",
       "isRequired": false
     },
     {
-      "key": "geo-location/reference-frame/astronomical-body",
-      "label": "Astronomical Body",
+      "key": "physical-address/postal-code",
+      "label": "Postal Code",
       "type": "string",
-      "sectionGroup": "geo-location",
+      "sectionGroup": "physical-address",
+      "isRequired": false
+    },
+    {
+      "key": "physical-address/state",
+      "label": "State",
+      "type": "string",
+      "sectionGroup": "physical-address",
+      "isRequired": false
+    },
+    {
+      "key": "physical-address/city",
+      "label": "City",
+      "type": "string",
+      "sectionGroup": "physical-address",
+      "isRequired": false
+    },
+    {
+      "key": "physical-address/country-code",
+      "label": "Country Code",
+      "type": "string",
+      "sectionGroup": "physical-address",
       "isRequired": false,
-      "pattern": "[ -@\\[-\\^_-~]*"
+      "pattern": "[A-Z]{2}"
     },
     {
-      "key": "geo-location/reference-frame/geodetic-system/geodetic-datum",
-      "label": "Geodetic Datum",
+      "key": "locations/location/id",
+      "label": "Id",
       "type": "string",
-      "sectionGroup": "geo-location",
-      "isRequired": false,
-      "pattern": "[ -@\\[-\\^_-~]*"
-    },
-    {
-      "key": "geo-location/reference-frame/geodetic-system/coord-accuracy",
-      "label": "Coord Accuracy",
-      "type": "double",
-      "sectionGroup": "geo-location",
+      "sectionGroup": "locations",
       "isRequired": false
     },
     {
-      "key": "geo-location/reference-frame/geodetic-system/height-accuracy",
-      "label": "Height Accuracy",
-      "type": "double",
-      "sectionGroup": "geo-location",
+      "key": "locations/location/type",
+      "label": "Type",
+      "type": "string",
+      "sectionGroup": "locations",
       "isRequired": false
     },
     {
-      "key": "geo-location/latitude",
-      "label": "Latitude",
-      "type": "double",
-      "sectionGroup": "geo-location",
+      "key": "locations/location/parent",
+      "label": "Parent",
+      "type": "string",
+      "sectionGroup": "locations",
       "isRequired": false
     },
     {
-      "key": "geo-location/longitude",
-      "label": "Longitude",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/height",
-      "label": "Height",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/x",
-      "label": "X",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/y",
-      "label": "Y",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/z",
-      "label": "Z",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/velocity/v-north",
-      "label": "V North",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/velocity/v-east",
-      "label": "V East",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/velocity/v-up",
-      "label": "V Up",
-      "type": "double",
-      "sectionGroup": "geo-location",
-      "isRequired": false
-    },
-    {
-      "key": "geo-location/timestamp",
+      "key": "locations/location/timestamp",
       "label": "Timestamp",
       "type": "string",
-      "sectionGroup": "geo-location",
+      "sectionGroup": "locations",
       "isRequired": false
     },
     {
-      "key": "geo-location/valid-until",
+      "key": "locations/location/valid-until",
       "label": "Valid Until",
       "type": "string",
-      "sectionGroup": "geo-location",
+      "sectionGroup": "locations",
+      "isRequired": false
+    },
+    {
+      "key": "locations/location/contained-chassis/chassis-id",
+      "label": "Chassis Id",
+      "type": "int",
+      "sectionGroup": "locations",
+      "isRequired": false
+    },
+    {
+      "key": "locations/location/contained-chassis/ne-ref",
+      "label": "Ne Ref",
+      "type": "string",
+      "sectionGroup": "locations",
+      "isRequired": false
+    },
+    {
+      "key": "locations/location/contained-chassis/component-ref",
+      "label": "Component Ref",
+      "type": "string",
+      "sectionGroup": "locations",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/id",
+      "label": "Id",
+      "type": "string",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/rack-class",
+      "label": "Rack Class",
+      "type": "string",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/rack-location/location-ref",
+      "label": "Location Ref",
+      "type": "string",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/rack-location/row-number",
+      "label": "Row Number",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/rack-location/column-number",
+      "label": "Column Number",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/height",
+      "label": "Height",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/width",
+      "label": "Width",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/depth",
+      "label": "Depth",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/max-voltage",
+      "label": "Max Voltage",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/max-allocated-power",
+      "label": "Max Allocated Power",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/contained-chassis/relative-position",
+      "label": "Relative Position",
+      "type": "int",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/contained-chassis/ne-ref",
+      "label": "Ne Ref",
+      "type": "string",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/contained-chassis/component-ref",
+      "label": "Component Ref",
+      "type": "string",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/timestamp",
+      "label": "Timestamp",
+      "type": "string",
+      "sectionGroup": "racks",
+      "isRequired": false
+    },
+    {
+      "key": "racks/rack/valid-until",
+      "label": "Valid Until",
+      "type": "string",
+      "sectionGroup": "racks",
       "isRequired": false
     }
   ]

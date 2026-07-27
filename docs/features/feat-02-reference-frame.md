@@ -24,8 +24,8 @@ classDiagram
     class ReferenceFrame {
         +String alternateSystem [0..1]
         -String astronomicalBody [0..1]
-        +validateBody(astronomicalBody: String) Boolean
-        +validateDatum(geodeticDatum: String) Boolean
+        +validateBody(astronomicalBody: String) Boolean [1]
+        +validateDatum(geodeticDatum: String) Boolean [1]
     }
     class GeodeticSystem {
         +String geodeticDatum [0..1]

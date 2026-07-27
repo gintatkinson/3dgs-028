@@ -24,17 +24,19 @@ classDiagram
     class GeoLocation {
         +String timestamp [0..1]
         -String validUntil [0..1]
-        +getLocation(entityId: String) GeoLocation
-        +queryLocation(entityId: String) GeoLocation
-        +setCartesianLocation(x: Decimal64, y: Decimal64, z: Decimal64) Boolean
-        +getVelocity(entityId: String) VelocityVector
-        +checkExpiration(entityId: String) Boolean
-        +archiveExpiredData(entityId: String) Boolean
-        +getParentLocation(entityId: String) ReferenceFrame
+        +getLocation(entityId: String) GeoLocation [1]
+        +queryLocation(entityId: String) GeoLocation [1]
+        +setCartesianLocation(x: Decimal64, y: Decimal64, z: Decimal64) Boolean [1]
+        +getVelocity(entityId: String) VelocityVector [0..1]
+        +checkExpiration(entityId: String) Boolean [1]
+        +archiveExpiredData(entityId: String) Boolean [0..1]
+        +getParentLocation(entityId: String) ReferenceFrame [0..1]
     }
     class ReferenceFrame {
         +String alternateSystem [0..1]
         +String astronomicalBody [0..1]
+        +validateBody(astronomicalBody: String) Boolean [1]
+        +validateDatum(geodeticDatum: String) Boolean [1]
     }
     class Location {
         <<choice>>
@@ -44,9 +46,57 @@ classDiagram
         +Decimal64 vEast [0..1]
         +Decimal64 vUp [0..1]
     }
-    GeoLocation "1" *-- "0..1" ReferenceFrame : referenceFrame
-    GeoLocation "1" *-- "0..1" Location : location
-    GeoLocation "1" *-- "0..1" VelocityVector : velocity
+    class Datastore {
+        +readGeoLocation(entityId: String) GeoLocation [0..1]
+        +storeLocation(location: GeoLocation) Boolean [1]
+    }
+    class SystemClock {
+        +currentTime() Timestamp [1]
+    }
+    class NetworkManagementSystem {
+        +queryLocation(entityId: String) GeoLocation [0..1]
+    }
+    class SystemAdministrator {
+        +setReferenceFrame(body: String, datum: String) Boolean [1]
+    }
+    class LocationConsumer {
+        +getLocation(entityId: String) GeoLocation [0..1]
+    }
+    class LocationAnalyticsSystem {
+        +getVelocity(entityId: String) VelocityVector [0..1]
+    }
+    class NavigationSystem {
+        +getVelocity(entityId: String) VelocityVector [0..1]
+    }
+    class FacilityManager {
+        +resolveLocation(entityId: String) GeoLocation [0..1]
+    }
+    class LocationHierarchyResolver {
+        +resolveLocation(entityId: String) GeoLocation [1]
+    }
+    class GeospatialApplication {
+        +getLocation(entityId: String) Location [0..1]
+        +setCartesianLocation(x: Decimal64, y: Decimal64, z: Decimal64) Boolean [1]
+    }
+    class CoordinateConverter {
+        +toCartesian(lat: Decimal64, lon: Decimal64, h: Decimal64, datum: String) CartesianCoordinates [1]
+    }
+    class DataRetentionManager {
+        +checkExpiration(entityId: String) Boolean [1]
+        +archiveExpiredData(entityId: String) Boolean [0..1]
+    }
+    class VelocityCalculator {
+        +computeSpeed(vNorth: Decimal64, vEast: Decimal64) Decimal64 [1]
+    }
+    class HeadingCalculator {
+        +computeHeading(vNorth: Decimal64, vEast: Decimal64) Decimal64 [1]
+    }
+    class GeoLocationConfigurator {
+        +setReferenceFrame(body: String, datum: String) Boolean [1]
+    }
+    GeoLocation *-- ReferenceFrame
+    GeoLocation *-- Location
+    GeoLocation *-- VelocityVector
 ```
 
 ## Interface Requirements

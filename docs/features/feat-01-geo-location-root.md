@@ -51,6 +51,7 @@ classDiagram
         +storeLocation(location: GeoLocation) Boolean [1]
         +readValidUntil(entityId: String) Timestamp [0..1]
         +storeReferenceFrame(frameData: ReferenceFrame) Boolean [1]
+        +markAsExpired(entityId: String) Boolean [1]
     }
     class SystemClock {
         +currentTime() Timestamp [1]

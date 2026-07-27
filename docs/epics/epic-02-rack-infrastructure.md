@@ -19,7 +19,10 @@ This epic covers the rack infrastructure sub-model within the network inventory 
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-- [ ] #[UseCaseID] - Use cases to be linked during Phase 3
+- [ ] #32 - [Deploy and Manage Equipment Racks in Network Facilities](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-03-deploy-equipment-rack.md) (Core rack container and rack entity lifecycle)
+- [ ] #34 - [Assign and Locate Racks within Facility Rooms and Spaces](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-04-assign-rack-location.md) (Rack-to-location spatial assignment)
+- [ ] #36 - [Deploy Chassis Equipment in Racks and Direct Locations](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-05-deploy-chassis.md) (Chassis placement across rack and direct-location deployments)
+- [ ] #37 - [Validate Location Data Quality and Operational Readiness](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-06-validate-data-quality.md) (Cross-cutting data quality validation)
 
 #### Associated User Stories
 - [ ] #17 - [Query Rack Infrastructure Inventory](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-04-query-rack-inventory.md) (Full rack inventory listing with filtering — Section 3)

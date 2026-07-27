@@ -20,7 +20,10 @@ This epic covers the hierarchical location model for network inventory as define
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-- [ ] #[UseCaseID] - Use cases to be linked during Phase 3
+- [ ] #28 - [Register and Manage Network Inventory Location Hierarchy](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-01-location-hierarchy.md) (Core location container hierarchy management)
+- [ ] #30 - [Enrich Network Inventory Location with Physical Address and Geographic Coordinates](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-02-physical-address-enrichment.md) (Address and geo-location enrichment)
+- [ ] #36 - [Deploy Chassis Equipment in Racks and Direct Locations](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-05-deploy-chassis.md) (Chassis placement across rack and direct-location deployments)
+- [ ] #37 - [Validate Location Data Quality and Operational Readiness](https://github.com/gintatkinson/3dgs-028/blob/main/docs/use-cases/uc-06-validate-data-quality.md) (Cross-cutting data quality validation)
 
 #### Associated User Stories
 - [ ] #10 - [Query Network Inventory Location Hierarchy](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-01-query-location-hierarchy.md) (Hierarchical traversal of location tree — Section 2, 6)

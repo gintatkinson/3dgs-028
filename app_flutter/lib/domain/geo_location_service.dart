@@ -3,6 +3,27 @@ import 'geo_location.dart';
 class GeoLocationService {
   static const _dateTimePattern =
       r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$';
+  static const _bodyPattern = r'^[ -@\[-\^_-~]*$';
+
+  static String? validateAstronomicalBody(String? value) {
+    if (value == null || value.isEmpty) return null;
+    final regex = RegExp(_bodyPattern);
+    if (!regex.hasMatch(value)) {
+      return 'Invalid astronomical body: contains characters outside the allowed set [ -@[\\-\\^_-~].';
+    }
+    return null;
+  }
+
+  static String normalizeAstronomicalBody(String value) {
+    return value.toLowerCase();
+  }
+
+  static String? validateAlternateSystem(String? value, bool featureEnabled) {
+    if (value != null && !featureEnabled) {
+      return 'Alternate system set but feature is not enabled.';
+    }
+    return null;
+  }
 
   static String? validateTimestamp(String value) {
     final regex = RegExp(_dateTimePattern);

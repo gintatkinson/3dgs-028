@@ -104,6 +104,10 @@ An external system or application requests geographic location data in a format 
   1. The astronomical-body is "67p/churyumov-gerasimenko" (contains forward slash).
   2. GML CRS URIs may not support forward slashes in all contexts.
   3. The Integration System percent-encodes the body name or returns an error.
+- **5s. Valid-Until Expired Data Export (Branches from Basic Flow step 2):**
+  1. The geo-location valid-until has passed and the data is expired.
+  2. An external consumer requests the location in a standard format.
+  3. The Integration System exports the data with an expiration warning header in the output metadata.
   1. The YANG grouping uses `decimal64` values with up to 16 fraction digits for latitude/longitude.
   2. The target standard uses `double` or string representations with potentially different precision.
   3. The Integration System maps the values with best-effort precision preservation and logs a warning if precision may be affected.

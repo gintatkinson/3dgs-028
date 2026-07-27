@@ -99,6 +99,19 @@ classDiagram
     GeoLocation *-- VelocityVector
     GeoLocation ..> Datastore : uses
     GeoLocation ..> SystemClock : uses
+    Datastore ..> NetworkManagementSystem : serves
+    Datastore ..> SystemAdministrator : serves
+    Datastore ..> LocationConsumer : serves
+    Datastore ..> LocationAnalyticsSystem : serves
+    Datastore ..> NavigationSystem : serves
+    Datastore ..> FacilityManager : serves
+    Datastore ..> LocationHierarchyResolver : serves
+    Datastore ..> GeospatialApplication : serves
+    Datastore ..> CoordinateConverter : serves
+    Datastore ..> DataRetentionManager : serves
+    Datastore ..> VelocityCalculator : serves
+    Datastore ..> HeadingCalculator : serves
+    Datastore ..> GeoLocationConfigurator : serves
 ```
 
 ## Interface Requirements

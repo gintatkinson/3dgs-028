@@ -125,6 +125,10 @@ A network operator or automated system initiates the creation of a new network e
   1. The NMS attempts to modify a read-only geo-location per RFC 8341.
   2. The system rejects with an authorization error.
   3. The NMS escalates for elevated permissions if required.
+- **5w. Invalid valid-until Format (Branches from Basic Flow step 6):**
+  1. The NMS provides a valid-until value not conforming to date-and-time format.
+  2. The system rejects the value with a schema violation error.
+  3. The NMS corrects to ISO 8601 format and retries.
 
 ## 6. Postconditions (Guarantees)
 - **Success Guarantee:** A complete or partial geo-location container is persisted in the device configuration with all provided attribute values validated against schema constraints. The location can be queried via standard management protocols.

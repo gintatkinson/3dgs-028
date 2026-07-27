@@ -22,7 +22,9 @@ This epic covers the rack infrastructure sub-model within the network inventory 
 - [ ] #[UseCaseID] - Use cases to be linked during Phase 3
 
 #### Associated User Stories
-- [ ] #[StoryID] - User stories to be linked during Phase 2
+- [ ] #17 - [Query Rack Infrastructure Inventory](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-04-query-rack-inventory.md) (Full rack inventory listing with filtering — Section 3)
+- [ ] #18 - [Locate Racks by Facility or Location](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-05-locate-racks-by-facility.md) (Spatial filtering of racks by location reference — Section 3, 6)
+- [ ] #20 - [Calculate Rack Power and Spatial Capacity Utilization](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-06-rack-capacity-calculations.md) (Electrical and spatial capacity calculations — Section 3)
 
 ## 3. Architecture
 

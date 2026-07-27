@@ -23,7 +23,13 @@ This epic covers the hierarchical location model for network inventory as define
 - [ ] #[UseCaseID] - Use cases to be linked during Phase 3
 
 #### Associated User Stories
-- [ ] #[StoryID] - User stories to be linked during Phase 2
+- [ ] #10 - [Query Network Inventory Location Hierarchy](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-01-query-location-hierarchy.md) (Hierarchical traversal of location tree — Section 2, 6)
+- [ ] #12 - [Validate Location for Field Dispatch Readiness](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-02-validate-location-dispatch.md) (Operational readiness check for field dispatch — Section 6)
+- [ ] #15 - [Handle Expired Location Data and Temporal Staleness](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-03-expired-location-handling.md) (Temporal validity lifecycle of location records — Section 6)
+- [ ] #23 - [Navigate Full Facility Topology from Site to Chassis](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-07-navigate-facility-topology.md) (End-to-end topology navigation — Section 1, Appendix A)
+- [ ] #24 - [Enforce Read-Only Access Control on Location Data](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-08-enforce-access-control.md) (NACM-based security for location data — Section 7)
+- [ ] #26 - [Map Distributed Multi-Chassis Network Elements Across Locations](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-09-distributed-multi-chassis.md) (Multi-location chassis mapping — Appendix A.2)
+- [ ] #27 - [Paginated Query of Large-Scale Location Inventories](https://github.com/gintatkinson/3dgs-028/blob/main/docs/user-stories/us-10-paginated-queries.md) (Pagination for large datasets — Section 6)
 
 ## 3. Architecture
 

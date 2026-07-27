@@ -16,6 +16,8 @@ import 'package:app_flutter/domain/geo_location_service.dart';
 ///
 /// State changes: each call to [loadType] replaces the previous type and calls
 /// [notifyListeners]; the widget layer is expected to rebuild in response.
+///
+/// @realizes UML::PropertyGrid (schema-driven form rendering)
 class PropertiesViewModel extends ChangeNotifier {
   PropertiesViewModel(this._dataSource);
   final DataSource _dataSource;
@@ -48,7 +50,42 @@ class PropertiesViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<String?> saveProperties(String nodeId, Map<String, dynamic> data) async {
+  /// Persists property data for [nodeId] after running type-specific
+  /// validation, then delegates to [DataSource.saveProperties].
+  ///
+  /// Validation dispatch is based on the currently loaded type
+  /// ([_currentType.typeName]) and is applied BEFORE any write occurs.
+  /// This ensures type-specific constraints (timestamp format, body name
+  /// pattern, etc.) are enforced at the ViewModel layer.
+  ///
+  /// Returns a validation error string on rejection, or `null` on
+  /// successful save. Callers should not proceed with UI updates when
+  /// a non-null error is returned.
+  ///
+  /// ### Type-specific validation dispatch table:
+  ///
+  /// | Type | Validation | Normalization |
+  /// |------|-----------|---------------|
+  /// | GeoLocation | [GeoLocationService.validateTimestamp] on `timestamp` | — |
+  /// | ReferenceFrame | [GeoLocationService.validateAstronomicalBody] + [GeoLocationService.normalizeAstronomicalBody] on `astronomical_body` | Lowercase |
+  ///
+  /// This dispatch pattern is intentionally a linear chain rather than a
+  /// registry/map: the number of types with custom validation is small
+  /// (<10) and a map-based dispatch adds indirection without reducing
+  /// cyclomatic complexity.
+  ///
+  /// @param nodeId The node identifier to persist.
+  /// @param data The key-value property map to save.
+  /// @returns An error message string if validation fails, or `null` on
+  ///          success.
+  ///
+  /// @realizes UML::PropertiesViewModel::saveProperties
+  /// @realizes UML::GeoLocation::setCartesianLocation (validation path)
+  /// @realizes UML::ReferenceFrame::validateBody
+  Future<String?> saveProperties(
+    String nodeId,
+    Map<String, dynamic> data,
+  ) async {
     if (_currentType != null && _currentType!.typeName == 'GeoLocation') {
       final timestamp = data['timestamp'] as String?;
       if (timestamp != null) {
@@ -62,11 +99,16 @@ class PropertiesViewModel extends ChangeNotifier {
     if (_currentType != null && _currentType!.typeName == 'ReferenceFrame') {
       final astronomicalBody = data['astronomical_body'] as String?;
       if (astronomicalBody != null) {
-        final normalized = GeoLocationService.normalizeAstronomicalBody(astronomicalBody);
-        final validationError = GeoLocationService.validateAstronomicalBody(normalized);
+        final normalized =
+            GeoLocationService.normalizeAstronomicalBody(astronomicalBody);
+        final validationError =
+            GeoLocationService.validateAstronomicalBody(normalized);
         if (validationError != null) {
           return validationError;
         }
+        // Mutate the data map in-place so the normalized value is what
+        // gets persisted. This avoids a copy-and-reassign pattern that
+        // would require callers to track which fields were normalized.
         data['astronomical_body'] = normalized;
       }
     }

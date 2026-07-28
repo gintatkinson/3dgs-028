@@ -53,7 +53,9 @@ void main() {
       test('returns null for complete location with address', () {
         final result = NiLocationServices.validateDispatchReadiness({
           'id': 'loc-1',
-          'physical_address': '123 Main St',
+          'postal_code': '160-0022',
+          'city': 'Shinjuku',
+          'country_code': 'JP',
           'timestamp': '2024-01-01T00:00:00Z',
         });
         expect(result, isNull);
@@ -104,6 +106,46 @@ void main() {
           'longitude': 139.0,
         });
         expect(result, isNull);
+      });
+
+      test('nil_location_pole has neither address nor geo → incomplete', () async {
+        final locations = await NiLocationServices.queryLocationHierarchy(db);
+        final pole = locations.firstWhere(
+            (l) => l['_node_id'] == 'nil_location_pole');
+        final result = NiLocationServices.validateDispatchReadiness(pole);
+        expect(result, equals('incomplete'));
+      });
+
+      test('nil_location_building has address → ready (null)', () async {
+        final locations = await NiLocationServices.queryLocationHierarchy(db);
+        final building = locations.firstWhere(
+            (l) => l['_node_id'] == 'nil_location_building');
+        final result = NiLocationServices.validateDispatchReadiness(building);
+        expect(result, isNull);
+      });
+
+      test('nil_location_room has geo → ready (null)', () async {
+        final locations = await NiLocationServices.queryLocationHierarchy(db);
+        final room = locations.firstWhere(
+            (l) => l['_node_id'] == 'nil_location_room');
+        final result = NiLocationServices.validateDispatchReadiness(room);
+        expect(result, isNull);
+      });
+
+      test('nil_location_room2 has both address and geo → ready (null)', () async {
+        final locations = await NiLocationServices.queryLocationHierarchy(db);
+        final room2 = locations.firstWhere(
+            (l) => l['_node_id'] == 'nil_location_room2');
+        final result = NiLocationServices.validateDispatchReadiness(room2);
+        expect(result, isNull);
+      });
+
+      test('nil_location_site has neither address nor geo → incomplete', () async {
+        final locations = await NiLocationServices.queryLocationHierarchy(db);
+        final site = locations.firstWhere(
+            (l) => l['_node_id'] == 'nil_location_site');
+        final result = NiLocationServices.validateDispatchReadiness(site);
+        expect(result, equals('incomplete'));
       });
     });
 

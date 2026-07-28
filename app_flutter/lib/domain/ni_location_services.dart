@@ -34,8 +34,12 @@ class NiLocationServices {
       return 'stale';
     }
 
-    final hasAddress = locationData.containsKey('physical_address') &&
-        locationData['physical_address'] != null;
+    final hasAddress = (locationData.containsKey('postal_code') &&
+            locationData['postal_code'] != null) ||
+        (locationData.containsKey('city') &&
+            locationData['city'] != null) ||
+        (locationData.containsKey('country_code') &&
+            locationData['country_code'] != null);
     final hasGeo = (locationData.containsKey('latitude') &&
             locationData['latitude'] != null) ||
         (locationData.containsKey('longitude') &&

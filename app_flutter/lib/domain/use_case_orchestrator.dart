@@ -174,8 +174,12 @@ class UseCaseOrchestrator {
         continue;
       }
 
-      final hasAddress = data.containsKey('physical_address') &&
-          data['physical_address'] != null;
+      final hasAddress = (data.containsKey('postal_code') &&
+              data['postal_code'] != null) ||
+          (data.containsKey('city') &&
+              data['city'] != null) ||
+          (data.containsKey('country_code') &&
+              data['country_code'] != null);
       final hasGeo = (data.containsKey('latitude') &&
               data['latitude'] != null) ||
           (data.containsKey('longitude') && data['longitude'] != null);

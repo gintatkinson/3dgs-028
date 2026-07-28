@@ -197,9 +197,34 @@ void main() {
         expect(results['incomplete-loc'], equals('incomplete'));
       });
 
-      test('marks nil_location_site as incomplete since it lacks address/geo', () async {
+      test('marks nil_location_site as incomplete (no address, no geo)', () async {
         final results = await UseCaseOrchestrator.validateDataQuality(db);
         expect(results.containsKey('nil_location_site'), isTrue);
+        expect(results['nil_location_site'], equals('incomplete'));
+      });
+
+      test('marks nil_location_pole as incomplete (no address, no geo)', () async {
+        final results = await UseCaseOrchestrator.validateDataQuality(db);
+        expect(results.containsKey('nil_location_pole'), isTrue);
+        expect(results['nil_location_pole'], equals('incomplete'));
+      });
+
+      test('marks nil_location_building as valid (has address)', () async {
+        final results = await UseCaseOrchestrator.validateDataQuality(db);
+        expect(results.containsKey('nil_location_building'), isTrue);
+        expect(results['nil_location_building'], equals('valid'));
+      });
+
+      test('marks nil_location_room as valid (has geo)', () async {
+        final results = await UseCaseOrchestrator.validateDataQuality(db);
+        expect(results.containsKey('nil_location_room'), isTrue);
+        expect(results['nil_location_room'], equals('valid'));
+      });
+
+      test('marks nil_location_room2 as valid (has both address and geo)', () async {
+        final results = await UseCaseOrchestrator.validateDataQuality(db);
+        expect(results.containsKey('nil_location_room2'), isTrue);
+        expect(results['nil_location_room2'], equals('valid'));
       });
     });
 

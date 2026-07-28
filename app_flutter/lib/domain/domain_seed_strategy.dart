@@ -1111,6 +1111,7 @@ class DomainSeedStrategy implements SeedStrategy {
         'name': 'Tokyo Campus',
         'parent': null,
         'display_name': 'Tokyo Campus (Site)',
+        'uuid': 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
       },
       {
         'id': 'nil_location_building',
@@ -1118,6 +1119,12 @@ class DomainSeedStrategy implements SeedStrategy {
         'name': 'Building A',
         'parent': 'nil_location_site',
         'display_name': 'Building A',
+        'uuid': 'b2c3d4e5-f6a7-8901-bcde-f12345678901',
+        'physical_address': '1-2-3 Shinjuku',
+        'postal_code': '160-0022',
+        'state': 'Tokyo',
+        'city': 'Shinjuku',
+        'country_code': 'JP',
       },
       {
         'id': 'nil_location_room',
@@ -1125,6 +1132,10 @@ class DomainSeedStrategy implements SeedStrategy {
         'name': 'Equipment Room 101',
         'parent': 'nil_location_building',
         'display_name': 'Equipment Room 101',
+        'uuid': 'c3d4e5f6-a7b8-9012-cdef-123456789012',
+        'latitude': 35.6895,
+        'longitude': 139.6917,
+        'height': 45.0,
       },
       {
         'id': 'nil_location_room2',
@@ -1132,6 +1143,15 @@ class DomainSeedStrategy implements SeedStrategy {
         'name': 'Equipment Room 201',
         'parent': 'nil_location_building',
         'display_name': 'Equipment Room 201',
+        'uuid': 'd4e5f6a7-b8c9-0123-defa-123456789013',
+        'physical_address': '1-2-3 Shinjuku',
+        'postal_code': '160-0022',
+        'state': 'Tokyo',
+        'city': 'Shinjuku',
+        'country_code': 'JP',
+        'latitude': 35.6895,
+        'longitude': 139.6917,
+        'height': 45.0,
       },
       {
         'id': 'nil_location_pole',
@@ -1139,6 +1159,7 @@ class DomainSeedStrategy implements SeedStrategy {
         'name': 'Utility Pole TK-01',
         'parent': null,
         'display_name': 'Utility Pole TK-01 (Pole)',
+        'uuid': 'e5f6a7b8-c9d0-1234-efab-123456789014',
       },
     ];
 
@@ -1214,14 +1235,126 @@ class DomainSeedStrategy implements SeedStrategy {
         'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
       }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'uuid',
+        'label': 'UUID',
+        'attr_type': 'string',
+        'section_label': 'Identity',
+        'section_order': 1,
+        'is_required': 0,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'physical_address',
+        'label': 'Physical Address',
+        'attr_type': 'string',
+        'section_label': 'Address',
+        'section_order': 0,
+        'is_required': 0,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'postal_code',
+        'label': 'Postal Code',
+        'attr_type': 'string',
+        'section_label': 'Address',
+        'section_order': 1,
+        'is_required': 0,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'state',
+        'label': 'State',
+        'attr_type': 'string',
+        'section_label': 'Address',
+        'section_order': 2,
+        'is_required': 0,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'city',
+        'label': 'City',
+        'attr_type': 'string',
+        'section_label': 'Address',
+        'section_order': 3,
+        'is_required': 0,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'country_code',
+        'label': 'Country Code',
+        'attr_type': 'string',
+        'section_label': 'Address',
+        'section_order': 4,
+        'is_required': 0,
+        'pattern': r'^[A-Z]{2}$',
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'latitude',
+        'label': 'Latitude',
+        'attr_type': 'double',
+        'section_label': 'Geo-Location',
+        'section_order': 0,
+        'is_required': 0,
+        'min_value': -90,
+        'max_value': 90,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'longitude',
+        'label': 'Longitude',
+        'attr_type': 'double',
+        'section_label': 'Geo-Location',
+        'section_order': 1,
+        'is_required': 0,
+        'min_value': -180,
+        'max_value': 180,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+      batch2.insert('type_attributes', {
+        'type_name': locId,
+        'attr_key': 'height',
+        'label': 'Height',
+        'attr_type': 'double',
+        'section_label': 'Geo-Location',
+        'section_order': 2,
+        'is_required': 0,
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
       final propData = <String, dynamic>{
         'id': locId,
         'type': locType,
         'name': locName,
         'parent': locParent,
-        'timestamp': '2024-01-01T00:00:00Z',
+        'uuid': loc['uuid'],
+        'timestamp': '2024-06-15T10:00:00Z',
         'valid_until': '2030-12-31T23:59:59Z',
       };
+      if (loc.containsKey('physical_address'))
+        propData['physical_address'] = loc['physical_address'];
+      if (loc.containsKey('postal_code'))
+        propData['postal_code'] = loc['postal_code'];
+      if (loc.containsKey('state'))
+        propData['state'] = loc['state'];
+      if (loc.containsKey('city'))
+        propData['city'] = loc['city'];
+      if (loc.containsKey('country_code'))
+        propData['country_code'] = loc['country_code'];
+      if (loc.containsKey('latitude'))
+        propData['latitude'] = loc['latitude'];
+      if (loc.containsKey('longitude'))
+        propData['longitude'] = loc['longitude'];
+      if (loc.containsKey('height'))
+        propData['height'] = loc['height'];
 
       batch2.insert('properties', {
         'node_id': locId,

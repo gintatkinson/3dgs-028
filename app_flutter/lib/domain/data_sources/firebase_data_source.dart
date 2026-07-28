@@ -27,6 +27,9 @@ class FirebaseDataSource implements DataSource {
   List<TypeDescriptor>? _cachedTypes;
 
   @override
+  dynamic get db => null;
+
+  @override
   String get name => 'firebase';
 
   /// Reads all type descriptors from the `schema/types` Firestore document.

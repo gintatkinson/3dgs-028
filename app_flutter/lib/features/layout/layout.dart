@@ -17,6 +17,8 @@ import 'package:app_flutter/features/inspector/ni/ni_location_browser.dart';
 import 'package:app_flutter/features/inspector/ni/ni_location_tree_view_model.dart';
 import 'package:app_flutter/features/inspector/racks/rack_inventory_panel.dart';
 import 'package:app_flutter/features/inspector/racks/rack_table_view_model.dart';
+import 'package:app_flutter/features/inspector/quality/quality_dashboard.dart';
+import 'package:app_flutter/features/inspector/quality/quality_view_model.dart';
 import 'package:app_flutter/core/background_worker.dart';
 import 'package:app_flutter/core/theme/theme_controller.dart';
 
@@ -76,8 +78,12 @@ class _LayoutState extends State<Layout> {
   // Rack Table ViewModel
   RackTableViewModel? _rackTableViewModel;
 
+  // Quality Dashboard ViewModel
+  QualityDashboardViewModel? _qualityViewModel;
+
   // Tab state for inspector panel
   String _activeTab = 'geo';
+  bool _qualityInitialised = false;
 
   static const double _minPaneSize = 150.0;
 
@@ -143,6 +149,11 @@ class _LayoutState extends State<Layout> {
       _rackTableViewModel = RackTableViewModel(dataSource)
         ..loadRacks();
     }
+    if (_qualityViewModel == null) {
+      final dataSource = context.read<DataSource>();
+      _qualityViewModel = QualityDashboardViewModel(dataSource)
+        ..addListener(_onQualityViewModelChanged);
+    }
   }
 
   /// Triggers a rebuild when the properties view model notifies listeners.
@@ -157,6 +168,11 @@ class _LayoutState extends State<Layout> {
       _updateCurrentViewFromLayout();
       setState(() {});
     }
+  }
+
+  /// Rebuilds the UI when the quality view model notifies listeners.
+  void _onQualityViewModelChanged() {
+    if (mounted) setState(() {});
   }
 
   // Background Worker
@@ -291,6 +307,8 @@ class _LayoutState extends State<Layout> {
     _geoInspectorViewModel?.dispose();
     _niLocationTreeViewModel?.dispose();
     _rackTableViewModel?.dispose();
+    _qualityViewModel?.removeListener(_onQualityViewModelChanged);
+    _qualityViewModel?.dispose();
     super.dispose();
   }
 
@@ -492,7 +510,13 @@ class _LayoutState extends State<Layout> {
           _TabButton(
             label: 'Quality',
             active: _activeTab == 'quality',
-            onTap: () => setState(() => _activeTab = 'quality'),
+            onTap: () {
+              setState(() => _activeTab = 'quality');
+              if (!_qualityInitialised) {
+                _qualityInitialised = true;
+                _qualityViewModel?.runValidation();
+              }
+            },
           ),
         ],
       ),
@@ -526,9 +550,13 @@ class _LayoutState extends State<Layout> {
         }
         return const SizedBox.shrink();
       case 'quality':
-        return const Center(
-          child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),
-        );
+        if (_qualityViewModel != null) {
+          return ChangeNotifierProvider<QualityDashboardViewModel>.value(
+            value: _qualityViewModel!,
+            child: const QualityDashboard(),
+          );
+        }
+        return const SizedBox.shrink();
       default:
         return const SizedBox.shrink();
     }

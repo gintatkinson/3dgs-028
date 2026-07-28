@@ -159,7 +159,11 @@ class UseCaseOrchestrator {
   ///
   /// Alt flows: pagination for large sets, unauthorized access simulation,
   /// rack power capacity exceeded.
-  static Future<Map<String, String>> validateDataQuality(Database db) async {
+  static Future<Map<String, String>> validateDataQuality(
+      dynamic dataSource) async {
+    final db = dataSource is Database ? dataSource : dataSource.db as Database?;
+    if (db == null) return {};
+
     final results = <String, String>{};
 
     final allPropRows = await db.query('properties');

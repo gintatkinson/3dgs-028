@@ -42,6 +42,9 @@ class _StubDataSource implements DataSource {
   String get name => 'stub';
 
   @override
+  dynamic get db => null;
+
+  @override
   Future<void> dispose() async {}
 
   @override

@@ -18,6 +18,9 @@ class _MockDataSource implements DataSource {
   String get name => 'mock';
 
   @override
+  dynamic get db => null;
+
+  @override
   Future<List<TypeDescriptor>> discoverTypes() async => [
     TypeDescriptor(
       typeName: 'Root', displayName: 'Root', iconName: 'folder',

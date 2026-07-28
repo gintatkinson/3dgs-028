@@ -47,6 +47,9 @@ class FakeDataSource implements DataSource {
   @override
   String get name => 'fake';
 
+  @override
+  dynamic get db => null;
+
   final List<TreeNode> roots;
   final TopologyData topology;
   final Map<String, TypeDescriptor> types;

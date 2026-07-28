@@ -11,6 +11,9 @@ class _MockDataSource implements DataSource {
   @override
   String get name => 'mock';
 
+  @override
+  dynamic get db => null;
+
   Future<TypeDescriptor?> Function(String typeName)? onTypeFor;
   Future<List<InstanceRecord>> Function({
     required String parentNodeId,

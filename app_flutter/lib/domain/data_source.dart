@@ -82,6 +82,13 @@ abstract class DataSource {
   /// Fetches all active nodes and links for topology mapping.
   Future<TopologyData> fetchTopologyData();
 
+  /// Returns the underlying database handle if this data source is
+  /// SQLite-backed. Returns `null` for non-SQLite implementations.
+  ///
+  /// This is primarily used by [UseCaseOrchestrator] for cross-node
+  /// validation queries that require direct table access.
+  dynamic get db;
+
   /// Releases all resources held by this data source.
   ///
   /// After calling [dispose], the data source is no longer usable.

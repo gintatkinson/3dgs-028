@@ -26,6 +26,9 @@ class SqliteDataSource implements DataSource {
   List<TypeDescriptor>? _cachedTypes;
 
   @override
+  dynamic get db => _db;
+
+  @override
   String get name => 'sqlite';
 
   @override

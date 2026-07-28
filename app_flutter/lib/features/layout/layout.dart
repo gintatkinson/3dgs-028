@@ -15,6 +15,8 @@ import 'package:app_flutter/features/inspector/geo/geo_inspector.dart';
 import 'package:app_flutter/features/inspector/geo/geo_inspector_view_model.dart';
 import 'package:app_flutter/features/inspector/ni/ni_location_browser.dart';
 import 'package:app_flutter/features/inspector/ni/ni_location_tree_view_model.dart';
+import 'package:app_flutter/features/inspector/racks/rack_inventory_panel.dart';
+import 'package:app_flutter/features/inspector/racks/rack_table_view_model.dart';
 import 'package:app_flutter/core/background_worker.dart';
 import 'package:app_flutter/core/theme/theme_controller.dart';
 
@@ -70,6 +72,9 @@ class _LayoutState extends State<Layout> {
 
   // NI Location Tree ViewModel
   NiLocationTreeViewModel? _niLocationTreeViewModel;
+
+  // Rack Table ViewModel
+  RackTableViewModel? _rackTableViewModel;
 
   // Tab state for inspector panel
   String _activeTab = 'geo';
@@ -132,6 +137,11 @@ class _LayoutState extends State<Layout> {
       final dataSource = context.read<DataSource>();
       _niLocationTreeViewModel = NiLocationTreeViewModel(dataSource)
         ..loadLocations();
+    }
+    if (_rackTableViewModel == null) {
+      final dataSource = context.read<DataSource>();
+      _rackTableViewModel = RackTableViewModel(dataSource)
+        ..loadRacks();
     }
   }
 
@@ -280,6 +290,7 @@ class _LayoutState extends State<Layout> {
     _propertiesViewModel?.dispose();
     _geoInspectorViewModel?.dispose();
     _niLocationTreeViewModel?.dispose();
+    _rackTableViewModel?.dispose();
     super.dispose();
   }
 
@@ -507,9 +518,13 @@ class _LayoutState extends State<Layout> {
         }
         return const SizedBox.shrink();
       case 'racks':
-        return const Center(
-          child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),
-        );
+        if (_rackTableViewModel != null) {
+          return ChangeNotifierProvider<RackTableViewModel>.value(
+            value: _rackTableViewModel!,
+            child: const RackInventoryPanel(),
+          );
+        }
+        return const SizedBox.shrink();
       case 'quality':
         return const Center(
           child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),

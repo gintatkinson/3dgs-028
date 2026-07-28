@@ -5,13 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:app_flutter/domain/data_source.dart';
-import 'package:app_flutter/features/properties/property_grid.dart';
 import 'package:app_flutter/features/tree/view_models/tree_view_model.dart';
 import 'package:app_flutter/features/layout/layout_config_service.dart';
 import 'package:app_flutter/features/topology/topology_map.dart';
 import 'package:app_flutter/features/topology/topology_defaults.dart' show emptyTopologyData, loadTopologyData;
 import 'package:app_flutter/features/layout/component_factory.dart';
 import 'package:app_flutter/features/properties/view_models/properties_view_model.dart';
+import 'package:app_flutter/features/inspector/geo/geo_inspector.dart';
+import 'package:app_flutter/features/inspector/geo/geo_inspector_view_model.dart';
 import 'package:app_flutter/core/background_worker.dart';
 import 'package:app_flutter/core/theme/theme_controller.dart';
 
@@ -62,6 +63,12 @@ class _LayoutState extends State<Layout> {
   // Properties ViewModel
   PropertiesViewModel? _propertiesViewModel;
 
+  // Geo Inspector ViewModel
+  GeoInspectorViewModel? _geoInspectorViewModel;
+
+  // Tab state for inspector panel
+  String _activeTab = 'geo';
+
   static const double _minPaneSize = 150.0;
 
   bool _layoutInitialized = false;
@@ -110,6 +117,11 @@ class _LayoutState extends State<Layout> {
       _propertiesViewModel = PropertiesViewModel(dataSource)
         ..addListener(_onPropertiesViewModelChanged)
         ..loadType(_currentView);
+    }
+    if (_geoInspectorViewModel == null) {
+      final dataSource = context.read<DataSource>();
+      _geoInspectorViewModel = GeoInspectorViewModel(dataSource)
+        ..loadNode(_currentView);
     }
   }
 
@@ -242,6 +254,7 @@ class _LayoutState extends State<Layout> {
         });
         _subscribeProperties(_currentView);
         _propertiesViewModel?.loadType(_currentView);
+        _geoInspectorViewModel?.loadNode(_currentView);
       }
     }
   }
@@ -255,6 +268,7 @@ class _LayoutState extends State<Layout> {
     _treeViewModel?.dispose();
     _propertiesViewModel?.removeListener(_onPropertiesViewModelChanged);
     _propertiesViewModel?.dispose();
+    _geoInspectorViewModel?.dispose();
     super.dispose();
   }
 
@@ -351,6 +365,7 @@ class _LayoutState extends State<Layout> {
       _currentView = _treeViewModel!.treeData.first.id;
       _subscribeProperties(_currentView);
       _propertiesViewModel?.loadType(_currentView);
+      _geoInspectorViewModel?.loadNode(_currentView);
     }
     _layoutInitialized = true;
   }
@@ -368,6 +383,7 @@ class _LayoutState extends State<Layout> {
     _treeViewModel?.updateCurrentView(viewId);
     _subscribeProperties(viewId);
     _propertiesViewModel?.loadType(viewId);
+    _geoInspectorViewModel?.loadNode(viewId);
     widget.onViewChange?.call(viewId);
   }
 
@@ -415,21 +431,118 @@ class _LayoutState extends State<Layout> {
 
   /// Builds the child widget displayed in the properties panel.
   ///
-  /// Creates a [PropertyGrid] with the current fields, values, and a save
-  /// callback. Used as a builder callback by [ComponentFactory].
+  /// Now renders a tabbed interface with Geo, NI, Racks, and Quality tabs.
+  /// The Geo tab uses [GeoInspector] with its own [GeoInspectorViewModel].
+  /// Other tabs show placeholder content for now.
   Widget _buildChildWidget(BuildContext context) {
-    final fields = _propertiesViewModel?.fields ?? [];
+    return Column(
+      children: [
+        _buildTabBar(),
+        Expanded(child: _buildTabContent()),
+      ],
+    );
+  }
 
-    return PropertyGrid(
-      activeView: _currentView,
-      fields: fields,
-      initialValues: _nodeData,
-      onSave: (Map<String, dynamic> data) async {
-        final error = await _propertiesViewModel?.saveProperties(_currentView, data);
-        if (error != null) {
-          // Show validation error to user
+  Widget _buildTabBar() {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(
+          bottom: BorderSide(color: Theme.of(context).dividerColor),
+        ),
+      ),
+      child: Row(
+        children: [
+          _TabButton(
+            label: 'Geo',
+            active: _activeTab == 'geo',
+            onTap: () => setState(() => _activeTab = 'geo'),
+          ),
+          _TabButton(
+            label: 'NI',
+            active: _activeTab == 'ni',
+            onTap: () => setState(() => _activeTab = 'ni'),
+          ),
+          _TabButton(
+            label: 'Racks',
+            active: _activeTab == 'racks',
+            onTap: () => setState(() => _activeTab = 'racks'),
+          ),
+          _TabButton(
+            label: 'Quality',
+            active: _activeTab == 'quality',
+            onTap: () => setState(() => _activeTab = 'quality'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTabContent() {
+    switch (_activeTab) {
+      case 'geo':
+        if (_geoInspectorViewModel != null) {
+          return ChangeNotifierProvider<GeoInspectorViewModel>.value(
+            value: _geoInspectorViewModel!,
+            child: const GeoInspector(),
+          );
         }
-      },
+        return const SizedBox.shrink();
+      case 'ni':
+        return const Center(
+          child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),
+        );
+      case 'racks':
+        return const Center(
+          child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),
+        );
+      case 'quality':
+        return const Center(
+          child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),
+        );
+      default:
+        return const SizedBox.shrink();
+    }
+  }
+}
+
+class _TabButton extends StatelessWidget {
+  final String label;
+  final bool active;
+  final VoidCallback onTap;
+
+  const _TabButton({
+    required this.label,
+    required this.active,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        decoration: BoxDecoration(
+          border: Border(
+            bottom: BorderSide(
+              color: active
+                  ? Theme.of(context).colorScheme.primary
+                  : Colors.transparent,
+              width: 2,
+            ),
+          ),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 13,
+            fontWeight: active ? FontWeight.bold : FontWeight.normal,
+            color: active
+                ? Theme.of(context).colorScheme.primary
+                : Colors.grey,
+          ),
+        ),
+      ),
     );
   }
 }

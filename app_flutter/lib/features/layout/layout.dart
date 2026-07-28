@@ -13,6 +13,8 @@ import 'package:app_flutter/features/layout/component_factory.dart';
 import 'package:app_flutter/features/properties/view_models/properties_view_model.dart';
 import 'package:app_flutter/features/inspector/geo/geo_inspector.dart';
 import 'package:app_flutter/features/inspector/geo/geo_inspector_view_model.dart';
+import 'package:app_flutter/features/inspector/ni/ni_location_browser.dart';
+import 'package:app_flutter/features/inspector/ni/ni_location_tree_view_model.dart';
 import 'package:app_flutter/core/background_worker.dart';
 import 'package:app_flutter/core/theme/theme_controller.dart';
 
@@ -65,6 +67,9 @@ class _LayoutState extends State<Layout> {
 
   // Geo Inspector ViewModel
   GeoInspectorViewModel? _geoInspectorViewModel;
+
+  // NI Location Tree ViewModel
+  NiLocationTreeViewModel? _niLocationTreeViewModel;
 
   // Tab state for inspector panel
   String _activeTab = 'geo';
@@ -122,6 +127,11 @@ class _LayoutState extends State<Layout> {
       final dataSource = context.read<DataSource>();
       _geoInspectorViewModel = GeoInspectorViewModel(dataSource)
         ..loadNode(_currentView);
+    }
+    if (_niLocationTreeViewModel == null) {
+      final dataSource = context.read<DataSource>();
+      _niLocationTreeViewModel = NiLocationTreeViewModel(dataSource)
+        ..loadLocations();
     }
   }
 
@@ -269,6 +279,7 @@ class _LayoutState extends State<Layout> {
     _propertiesViewModel?.removeListener(_onPropertiesViewModelChanged);
     _propertiesViewModel?.dispose();
     _geoInspectorViewModel?.dispose();
+    _niLocationTreeViewModel?.dispose();
     super.dispose();
   }
 
@@ -488,9 +499,13 @@ class _LayoutState extends State<Layout> {
         }
         return const SizedBox.shrink();
       case 'ni':
-        return const Center(
-          child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),
-        );
+        if (_niLocationTreeViewModel != null) {
+          return ChangeNotifierProvider<NiLocationTreeViewModel>.value(
+            value: _niLocationTreeViewModel!,
+            child: const NiLocationBrowser(),
+          );
+        }
+        return const SizedBox.shrink();
       case 'racks':
         return const Center(
           child: Text('Coming Soon', style: TextStyle(color: Colors.grey)),

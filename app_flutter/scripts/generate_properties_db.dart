@@ -343,6 +343,399 @@ Future<void> _seedDatabase(Database db) async {
   }
 
   await batch.commit(noResult: true);
+
+  final batch2 = db.batch();
+
+  for (int i = 0; i < nttNodes.length; i++) {
+    final nodeId = nttNodes[i]['id'] as String;
+
+    batch2.insert('type_relations', {
+      'parent_type_name': nodeId,
+      'relation_name': 'contains',
+      'child_type_name': 'LocationChassis',
+      'child_label': 'Location Chassis',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('instances', {
+      'id': 'inst_${nodeId}_LocationChassis_1',
+      'parent_node_id': nodeId,
+      'type_name': 'LocationChassis',
+      'data_json': jsonEncode({
+        'chassis_id': 1,
+        'ne_ref': 'NE-$i',
+        'component_ref': 'comp-$i-1',
+      }),
+    });
+
+    batch2.insert('instances', {
+      'id': 'inst_${nodeId}_LocationChassis_2',
+      'parent_node_id': nodeId,
+      'type_name': 'LocationChassis',
+      'data_json': jsonEncode({
+        'chassis_id': 2,
+        'ne_ref': 'NE-$i',
+        'component_ref': 'comp-$i-2',
+      }),
+    });
+  }
+
+  final nilLocations = [
+    {
+      'id': 'nil_location_site',
+      'type': 'site',
+      'name': 'Tokyo Campus',
+      'parent': null,
+      'display_name': 'Tokyo Campus (Site)',
+    },
+    {
+      'id': 'nil_location_building',
+      'type': 'building',
+      'name': 'Building A',
+      'parent': 'nil_location_site',
+      'display_name': 'Building A',
+    },
+    {
+      'id': 'nil_location_room',
+      'type': 'equipment-room',
+      'name': 'Equipment Room 101',
+      'parent': 'nil_location_building',
+      'display_name': 'Equipment Room 101',
+    },
+    {
+      'id': 'nil_location_room2',
+      'type': 'equipment-room',
+      'name': 'Equipment Room 201',
+      'parent': 'nil_location_building',
+      'display_name': 'Equipment Room 201',
+    },
+    {
+      'id': 'nil_location_pole',
+      'type': 'pole',
+      'name': 'Utility Pole TK-01',
+      'parent': null,
+      'display_name': 'Utility Pole TK-01 (Pole)',
+    },
+  ];
+
+  for (final loc in nilLocations) {
+    final locId = loc['id'] as String;
+    final locType = loc['type'] as String;
+    final locName = loc['name'] as String;
+    final locParent = loc['parent'];
+    final displayName = loc['display_name'] as String;
+
+    batch2.insert('type_definitions', {
+      'type_name': locId,
+      'display_name': displayName,
+      'icon_name': 'business',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_relations', {
+      'parent_type_name': 'Components',
+      'relation_name': 'contains',
+      'child_type_name': locId,
+      'child_label': locName,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': locId,
+      'attr_key': 'id',
+      'label': 'ID',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 0,
+      'is_required': 1,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': locId,
+      'attr_key': 'type',
+      'label': 'Type',
+      'attr_type': 'string',
+      'section_label': 'Classification',
+      'section_order': 0,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': locId,
+      'attr_key': 'parent',
+      'label': 'Parent',
+      'attr_type': 'string',
+      'section_label': 'Classification',
+      'section_order': 1,
+      'is_required': 0,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': locId,
+      'attr_key': 'timestamp',
+      'label': 'Timestamp',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': locId,
+      'attr_key': 'valid_until',
+      'label': 'Valid Until',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    final propData = <String, dynamic>{
+      'id': locId,
+      'type': locType,
+      'name': locName,
+      'parent': locParent,
+      'timestamp': '2024-01-01T00:00:00Z',
+      'valid_until': '2030-12-31T23:59:59Z',
+    };
+
+    batch2.insert('properties', {
+      'node_id': locId,
+      'parent_node_id': null,
+      'data_json': jsonEncode(propData),
+    });
+  }
+
+  final racks = [
+    {
+      'id': 'rack_101_a',
+      'rack_class': 'rack-secure-medium',
+      'height': 2200,
+      'width': 600,
+      'depth': 1200,
+      'max_voltage': 240,
+      'max_allocated_power': 8000,
+      'display_name': 'Rack 101-A',
+      'location_ref': 'nil_location_room',
+      'row': 1,
+      'col': 1,
+      'chassis': [
+        {'relative_position': 10, 'ne_ref': 'NE-1', 'component_ref': 'comp-1-1'},
+        {'relative_position': 20, 'ne_ref': 'NE-2', 'component_ref': 'comp-2-1'},
+      ],
+    },
+    {
+      'id': 'rack_201_b',
+      'rack_class': 'rack-standard',
+      'height': 2000,
+      'width': 600,
+      'depth': 1000,
+      'max_voltage': 240,
+      'max_allocated_power': 6000,
+      'display_name': 'Rack 201-B',
+      'location_ref': 'nil_location_room2',
+      'row': 1,
+      'col': 2,
+      'chassis': [
+        {'relative_position': 5, 'ne_ref': 'NE-3', 'component_ref': 'comp-3-1'},
+      ],
+    },
+  ];
+
+  for (final rack in racks) {
+    final rackId = rack['id'] as String;
+    final rackClass = rack['rack_class'] as String;
+    final height = rack['height'] as int;
+    final width = rack['width'] as int;
+    final depth = rack['depth'] as int;
+    final maxVoltage = rack['max_voltage'] as int;
+    final maxAllocatedPower = rack['max_allocated_power'] as int;
+    final displayName = rack['display_name'] as String;
+    final locationRef = rack['location_ref'] as String;
+    final row = rack['row'] as int;
+    final col = rack['col'] as int;
+    final chassisList = rack['chassis'] as List;
+
+    batch2.insert('type_definitions', {
+      'type_name': rackId,
+      'display_name': displayName,
+      'icon_name': 'warehouse',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_relations', {
+      'parent_type_name': 'Components',
+      'relation_name': 'contains',
+      'child_type_name': rackId,
+      'child_label': displayName,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'id',
+      'label': 'ID',
+      'attr_type': 'string',
+      'section_label': 'Identity',
+      'section_order': 0,
+      'is_required': 1,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'rack_class',
+      'label': 'Rack Class',
+      'attr_type': 'enum',
+      'section_label': 'Classification',
+      'section_order': 0,
+      'is_required': 0,
+      'enum_options': jsonEncode([
+        'rack-standard',
+        'rack-secure-baseline',
+        'rack-secure-medium',
+        'rack-secure-high',
+      ]),
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'height',
+      'label': 'Height (mm)',
+      'attr_type': 'int',
+      'section_label': 'Dimensions',
+      'section_order': 0,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'width',
+      'label': 'Width (mm)',
+      'attr_type': 'int',
+      'section_label': 'Dimensions',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'depth',
+      'label': 'Depth (mm)',
+      'attr_type': 'int',
+      'section_label': 'Dimensions',
+      'section_order': 2,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'max_voltage',
+      'label': 'Max Voltage (V)',
+      'attr_type': 'int',
+      'section_label': 'Power',
+      'section_order': 0,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'max_allocated_power',
+      'label': 'Max Allocated Power (W)',
+      'attr_type': 'int',
+      'section_label': 'Power',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': 0,
+      'max_value': 65535,
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'timestamp',
+      'label': 'Timestamp',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_attributes', {
+      'type_name': rackId,
+      'attr_key': 'valid_until',
+      'label': 'Valid Until',
+      'attr_type': 'date',
+      'section_label': 'Temporal',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('properties', {
+      'node_id': rackId,
+      'parent_node_id': null,
+      'data_json': jsonEncode({
+        'id': rackId,
+        'rack_class': rackClass,
+        'height': height,
+        'width': width,
+        'depth': depth,
+        'max_voltage': maxVoltage,
+        'max_allocated_power': maxAllocatedPower,
+        'timestamp': '2024-01-01T00:00:00Z',
+        'valid_until': '2030-12-31T23:59:59Z',
+      }),
+    });
+
+    final placementId = '${rackId}_placement';
+    batch2.insert('type_definitions', {
+      'type_name': placementId,
+      'display_name': '$displayName Placement',
+      'icon_name': 'grid_on',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('type_relations', {
+      'parent_type_name': rackId,
+      'relation_name': 'contains',
+      'child_type_name': placementId,
+      'child_label': 'Rack Placement',
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
+    batch2.insert('instances', {
+      'id': 'inst_${rackId}_RackPlacement',
+      'parent_node_id': rackId,
+      'type_name': 'RackPlacement',
+      'data_json': jsonEncode({
+        'location_ref': locationRef,
+        'row_number': row,
+        'column_number': col,
+      }),
+    });
+
+    for (final chassis in chassisList) {
+      final relPos = chassis['relative_position'] as int;
+      final neRef = chassis['ne_ref'] as String;
+      final compRef = chassis['component_ref'] as String;
+
+      batch2.insert('instances', {
+        'id': 'inst_${rackId}_RackChassis_$relPos',
+        'parent_node_id': rackId,
+        'type_name': 'RackChassis',
+        'data_json': jsonEncode({
+          'relative_position': relPos,
+          'ne_ref': neRef,
+          'component_ref': compRef,
+        }),
+      });
+    }
+  }
+
+  await batch2.commit(noResult: true);
 }
 
 void _insertTypeDef(Batch batch, String typeName, String displayName, String iconName) {

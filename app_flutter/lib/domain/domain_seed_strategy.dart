@@ -1564,6 +1564,13 @@ class DomainSeedStrategy implements SeedStrategy {
         'child_label': 'Rack Placement',
       }, conflictAlgorithm: ConflictAlgorithm.ignore);
 
+      batch2.insert('type_relations', {
+        'parent_type_name': rackId,
+        'relation_name': 'contains',
+        'child_type_name': 'RackChassis',
+        'child_label': 'Rack Chassis',
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
+
       batch2.insert('instances', {
         'id': 'inst_${rackId}_RackPlacement',
         'parent_node_id': rackId,

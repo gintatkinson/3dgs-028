@@ -11,6 +11,7 @@ import 'package:app_flutter/features/topology/topology_map.dart';
 import 'package:app_flutter/features/topology/topology_defaults.dart' show emptyTopologyData, loadTopologyData;
 import 'package:app_flutter/features/layout/component_factory.dart';
 import 'package:app_flutter/features/properties/view_models/properties_view_model.dart';
+import 'package:app_flutter/features/properties/property_grid.dart';
 import 'package:app_flutter/features/inspector/geo/geo_inspector.dart';
 import 'package:app_flutter/features/inspector/geo/geo_inspector_view_model.dart';
 import 'package:app_flutter/features/inspector/ni/ni_location_browser.dart';
@@ -82,7 +83,7 @@ class _LayoutState extends State<Layout> {
   QualityDashboardViewModel? _qualityViewModel;
 
   // Tab state for inspector panel
-  String _activeTab = 'geo';
+  String _activeTab = 'properties';
   bool _qualityInitialised = false;
 
   static const double _minPaneSize = 150.0;
@@ -493,6 +494,11 @@ class _LayoutState extends State<Layout> {
       child: Row(
         children: [
           _TabButton(
+            label: 'Properties',
+            active: _activeTab == 'properties',
+            onTap: () => setState(() => _activeTab = 'properties'),
+          ),
+          _TabButton(
             label: 'Geo',
             active: _activeTab == 'geo',
             onTap: () => setState(() => _activeTab = 'geo'),
@@ -525,6 +531,19 @@ class _LayoutState extends State<Layout> {
 
   Widget _buildTabContent() {
     switch (_activeTab) {
+      case 'properties':
+        final fields = _propertiesViewModel?.fields ?? [];
+        return PropertyGrid(
+          activeView: _currentView,
+          fields: fields,
+          initialValues: _nodeData,
+          onSave: (Map<String, dynamic> data) async {
+            final error = await _propertiesViewModel?.saveProperties(_currentView, data);
+            if (error != null) {
+              // Show validation error to user
+            }
+          },
+        );
       case 'geo':
         if (_geoInspectorViewModel != null) {
           return ChangeNotifierProvider<GeoInspectorViewModel>.value(

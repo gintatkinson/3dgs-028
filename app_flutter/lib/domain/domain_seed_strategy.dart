@@ -1107,6 +1107,143 @@ class DomainSeedStrategy implements SeedStrategy {
       });
     }
 
+    // Geo-location attribute definitions for each node type
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'geo_location_timestamp',
+      'label': 'Timestamp',
+      'attr_type': 'date',
+      'section_label': 'Geo Location',
+      'section_order': 0,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'geo_location_valid_until',
+      'label': 'Valid Until',
+      'attr_type': 'date',
+      'section_label': 'Geo Location',
+      'section_order': 1,
+      'is_required': 0,
+      'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$',
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'reference_frame_astronomical_body',
+      'label': 'Astronomical Body',
+      'attr_type': 'string',
+      'section_label': 'Reference Frame',
+      'section_order': 0,
+      'is_required': 0,
+      'default_value': 'earth',
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'reference_frame_alternate_system',
+      'label': 'Alternate System',
+      'attr_type': 'string',
+      'section_label': 'Reference Frame',
+      'section_order': 1,
+      'is_required': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'geodetic_datum',
+      'label': 'Geodetic Datum',
+      'attr_type': 'string',
+      'section_label': 'Geodetic System',
+      'section_order': 0,
+      'is_required': 0,
+      'default_value': 'wgs-84',
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'coord_accuracy',
+      'label': 'Coordinate Accuracy',
+      'attr_type': 'double',
+      'section_label': 'Geodetic System',
+      'section_order': 1,
+      'is_required': 0,
+      'min_value': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'height_accuracy',
+      'label': 'Height Accuracy',
+      'attr_type': 'double',
+      'section_label': 'Geodetic System',
+      'section_order': 2,
+      'is_required': 0,
+      'min_value': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'ellipsoid_latitude',
+      'label': 'Latitude',
+      'attr_type': 'double',
+      'section_label': 'Ellipsoid Coordinates',
+      'section_order': 0,
+      'is_required': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'ellipsoid_longitude',
+      'label': 'Longitude',
+      'attr_type': 'double',
+      'section_label': 'Ellipsoid Coordinates',
+      'section_order': 1,
+      'is_required': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'ellipsoid_height',
+      'label': 'Height',
+      'attr_type': 'double',
+      'section_label': 'Ellipsoid Coordinates',
+      'section_order': 2,
+      'is_required': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'velocity_v_north',
+      'label': 'V North (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Velocity',
+      'section_order': 0,
+      'is_required': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'velocity_v_east',
+      'label': 'V East (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Velocity',
+      'section_order': 1,
+      'is_required': 0,
+    });
+
+    batch.insert('type_attributes', {
+      'type_name': node,
+      'attr_key': 'velocity_v_up',
+      'label': 'V Up (m/s)',
+      'attr_type': 'double',
+      'section_label': 'Velocity',
+      'section_order': 2,
+      'is_required': 0,
+    });
+
     final propertiesMap = {
       for (int j = 1; j <= 50; j++) 'field_$j': 'val_${node}_field_$j',
       'location': {
@@ -1115,7 +1252,17 @@ class DomainSeedStrategy implements SeedStrategy {
           'longitude': lon,
           'height': height,
         }
-      }
+      },
+      'geo_location_timestamp': '2024-01-01T00:00:00Z',
+      'geo_location_valid_until': '2030-12-31T23:59:59Z',
+      'reference_frame_astronomical_body': 'earth',
+      'geodetic_datum': 'wgs-84',
+      'ellipsoid_latitude': lat,
+      'ellipsoid_longitude': lon,
+      'ellipsoid_height': height,
+      'velocity_v_north': 0,
+      'velocity_v_east': 0,
+      'velocity_v_up': 0,
     };
     batch.insert('properties', {
       'node_id': node,

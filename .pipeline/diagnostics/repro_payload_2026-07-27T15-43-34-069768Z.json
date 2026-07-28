@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-07-27T15:43:34.069768Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-028.git",
+    "commit_hash": "22398ab65108ddae6c6e8bc78f866593dc37c9e8"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-01-geo-location-root.md contains class 'NetworkManagementSystem' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'SystemAdministrator' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'LocationConsumer' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'LocationAnalyticsSystem' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'NavigationSystem' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'FacilityManager' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'LocationHierarchyResolver' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'GeospatialApplication' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'CoordinateConverter' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'DataRetentionManager' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'VelocityCalculator' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'HeadingCalculator' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains class 'GeoLocationConfigurator' with zero relationships. Isolated classes are prohibited.",
+      "Feature feat-01-geo-location-root.md contains a disconnected UML Class Diagram. Classes ['VelocityCalculator', 'GeoLocationConfigurator', 'CoordinateConverter', 'LocationHierarchyResolver', 'LocationAnalyticsSystem', 'DataRetentionManager', 'LocationConsumer', 'NavigationSystem', 'NetworkManagementSystem', 'FacilityManager', 'HeadingCalculator', 'GeospatialApplication', 'SystemAdministrator'] are not structurally connected to 'GeoLocation'.",
+      "User Story us-05-select-reference-frame.md sequence diagram message 'config->>registry: storeReferenceFrame(frameData : ReferenceFrame)' calls operation 'storeReferenceFrame' which is not defined on class 'Datastore' in any class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram message 'locator->>registry: readValidUntil(entityId : String)' calls operation 'readValidUntil' which is not defined on class 'Datastore' in any class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram message 'locator->>registry: markAsExpired(entityId : String)' calls operation 'markAsExpired' which is not defined on class 'Datastore' in any class diagram.",
+      "Use Case uc-01-register-core-entity.md must contain at least 23 detailed Alternate/Exception flows. Found only 22 flows. (Referenced features define 23 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-02-port-location-standards.md must contain at least 18 detailed Alternate/Exception flows. Found only 17 flows. (Referenced features define 18 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)"
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

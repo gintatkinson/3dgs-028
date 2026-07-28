@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-07-27T15:35:27.021915Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-028.git",
+    "commit_hash": "6c00549a1cdd4eee488819796e5937fe160ce73a"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Epic epic-01-geo-location-grouping.md contains unresolved placeholder 'IssueID' or '#[IssueID]'.",
+      "Epic epic-01-geo-location-grouping.md class 'GeoLocationSubsystem' method 'setFrameOfReference' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location-grouping.md class 'ExternalModule' attribute 'usesGeoLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*])."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

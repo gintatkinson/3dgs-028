@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-07-27T15:40:38.660989Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-028.git",
+    "commit_hash": "818f2cb7749f0d4e903629908c3fd869dd6bf181"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-02-reference-frame.md class 'ReferenceFrame' method 'validateBody' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-02-reference-frame.md class 'ReferenceFrame' method 'validateDatum' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'getLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'queryLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'setCartesianLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'getVelocity' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'checkExpiration' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'archiveExpiredData' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location-root.md class 'GeoLocation' method 'getParentLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram lifeline 'app' specifies classifier 'GeospatialApplication' which is not defined in any feature class diagram.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram lifeline 'converter' specifies classifier 'CoordinateConverter' which is not defined in any feature class diagram.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram lifeline 'admin' specifies classifier 'SystemAdministrator' which is not defined in any feature class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram lifeline 'config' specifies classifier 'GeoLocationConfigurator' which is not defined in any feature class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-03-compute-speed-velocity.md sequence diagram lifeline 'analytics' specifies classifier 'LocationAnalyticsSystem' which is not defined in any feature class diagram.",
+      "User Story us-03-compute-speed-velocity.md sequence diagram lifeline 'calculator' specifies classifier 'VelocityCalculator' which is not defined in any feature class diagram.",
+      "User Story us-08-nest-locations-inheritance.md sequence diagram lifeline 'manager' specifies classifier 'FacilityManager' which is not defined in any feature class diagram.",
+      "User Story us-08-nest-locations-inheritance.md sequence diagram lifeline 'resolver' specifies classifier 'LocationHierarchyResolver' which is not defined in any feature class diagram.",
+      "User Story us-01-query-location-timestamp.md sequence diagram lifeline 'nms' specifies classifier 'NetworkManagementSystem' which is not defined in any feature class diagram.",
+      "User Story us-01-query-location-timestamp.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-04-compute-heading-velocity.md sequence diagram lifeline 'nav' specifies classifier 'NavigationSystem' which is not defined in any feature class diagram.",
+      "User Story us-04-compute-heading-velocity.md sequence diagram lifeline 'calculator' specifies classifier 'HeadingCalculator' which is not defined in any feature class diagram.",
+      "User Story us-02-validate-location-freshness.md sequence diagram lifeline 'consumer' specifies classifier 'LocationConsumer' which is not defined in any feature class diagram.",
+      "User Story us-02-validate-location-freshness.md sequence diagram lifeline 'clock' specifies classifier 'SystemClock' which is not defined in any feature class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram lifeline 'manager' specifies classifier 'DataRetentionManager' which is not defined in any feature class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "Use Case uc-03-track-object-motion.md must contain at least 11 detailed Alternate/Exception flows. Found only 5 flows. (Referenced features define 11 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-04-configure-non-earth-geodetic.md must contain at least 14 detailed Alternate/Exception flows. Found only 4 flows. (Referenced features define 14 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-01-register-core-entity.md must contain at least 23 detailed Alternate/Exception flows. Found only 4 flows. (Referenced features define 23 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-02-port-location-standards.md must contain at least 18 detailed Alternate/Exception flows. Found only 4 flows. (Referenced features define 18 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)"
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

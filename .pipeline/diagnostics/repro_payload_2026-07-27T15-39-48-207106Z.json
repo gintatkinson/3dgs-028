@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-07-27T15:39:48.207106Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "/Users/perkunas/jail/3dgs-028/skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-028.git",
+    "commit_hash": "8770c1cc40de384a97543c64286395449d050568"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "User Story us-06-switch-coordinate-systems.md sequence diagram lifeline 'app' specifies classifier 'GeospatialApplication' which is not defined in any feature class diagram.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram lifeline 'converter' specifies classifier 'CoordinateConverter' which is not defined in any feature class diagram.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram message 'app->>locator: getLocation(entityId : String)' calls operation 'getLocation' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-06-switch-coordinate-systems.md sequence diagram message 'app->>locator: setCartesianLocation(x : Decimal64, y : Decimal64, z : Decimal64)' calls operation 'setCartesianLocation' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram lifeline 'admin' specifies classifier 'SystemAdministrator' which is not defined in any feature class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram lifeline 'config' specifies classifier 'GeoLocationConfigurator' which is not defined in any feature class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram message 'config->>frame: validateBody(astronomicalBody : String)' calls operation 'validateBody' which is not defined on class 'ReferenceFrame' in any class diagram.",
+      "User Story us-05-select-reference-frame.md sequence diagram message 'config->>frame: validateDatum(geodeticDatum : String)' calls operation 'validateDatum' which is not defined on class 'ReferenceFrame' in any class diagram.",
+      "User Story us-03-compute-speed-velocity.md sequence diagram lifeline 'analytics' specifies classifier 'LocationAnalyticsSystem' which is not defined in any feature class diagram.",
+      "User Story us-03-compute-speed-velocity.md sequence diagram lifeline 'calculator' specifies classifier 'VelocityCalculator' which is not defined in any feature class diagram.",
+      "User Story us-03-compute-speed-velocity.md sequence diagram message 'analytics->>locator: getVelocity(entityId : String)' calls operation 'getVelocity' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-08-nest-locations-inheritance.md sequence diagram lifeline 'manager' specifies classifier 'FacilityManager' which is not defined in any feature class diagram.",
+      "User Story us-08-nest-locations-inheritance.md sequence diagram lifeline 'resolver' specifies classifier 'LocationHierarchyResolver' which is not defined in any feature class diagram.",
+      "User Story us-08-nest-locations-inheritance.md sequence diagram message 'resolver->>router: getLocation(routerId : String)' calls operation 'getLocation' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-08-nest-locations-inheritance.md sequence diagram message 'resolver->>building: getParentLocation(routerId : String)' calls operation 'getParentLocation' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-01-query-location-timestamp.md sequence diagram lifeline 'nms' specifies classifier 'NetworkManagementSystem' which is not defined in any feature class diagram.",
+      "User Story us-01-query-location-timestamp.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-01-query-location-timestamp.md sequence diagram message 'nms->>locator: queryLocation(entityId : String)' calls operation 'queryLocation' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-04-compute-heading-velocity.md sequence diagram lifeline 'nav' specifies classifier 'NavigationSystem' which is not defined in any feature class diagram.",
+      "User Story us-04-compute-heading-velocity.md sequence diagram lifeline 'calculator' specifies classifier 'HeadingCalculator' which is not defined in any feature class diagram.",
+      "User Story us-04-compute-heading-velocity.md sequence diagram message 'nav->>locator: getVelocity(entityId : String)' calls operation 'getVelocity' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-02-validate-location-freshness.md sequence diagram lifeline 'consumer' specifies classifier 'LocationConsumer' which is not defined in any feature class diagram.",
+      "User Story us-02-validate-location-freshness.md sequence diagram lifeline 'clock' specifies classifier 'SystemClock' which is not defined in any feature class diagram.",
+      "User Story us-02-validate-location-freshness.md sequence diagram message 'consumer->>locator: getLocation(entityId : String)' calls operation 'getLocation' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram lifeline 'manager' specifies classifier 'DataRetentionManager' which is not defined in any feature class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram lifeline 'registry' specifies classifier 'Datastore' which is not defined in any feature class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram message 'manager->>locator: checkExpiration(entityId : String)' calls operation 'checkExpiration' which is not defined on class 'GeoLocation' in any class diagram.",
+      "User Story us-07-handle-expired-location.md sequence diagram message 'manager->>locator: archiveExpiredData(entityId : String)' calls operation 'archiveExpiredData' which is not defined on class 'GeoLocation' in any class diagram.",
+      "Use Case uc-03-track-object-motion.md must contain at least 11 detailed Alternate/Exception flows. Found only 5 flows. (Referenced features define 11 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-04-configure-non-earth-geodetic.md must contain at least 14 detailed Alternate/Exception flows. Found only 4 flows. (Referenced features define 14 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-01-register-core-entity.md must contain at least 23 detailed Alternate/Exception flows. Found only 4 flows. (Referenced features define 23 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Use Case uc-02-port-location-standards.md must contain at least 18 detailed Alternate/Exception flows. Found only 4 flows. (Referenced features define 18 schema validation constraints, requiring at least that many alternate flows, with a minimum floor of 2.)",
+      "Epic epic-01-geo-location-grouping.md contains unresolved placeholder 'IssueID' or '#[IssueID]'."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-07-27T15:44:24.717684Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-028.git",
+    "commit_hash": "52c6a9f394d4651b2194d2d6eb2e59f12cf0ad89"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "User Story us-07-handle-expired-location.md sequence diagram message 'locator->>registry: markAsExpired(entityId : String)' calls operation 'markAsExpired' which is not defined on class 'Datastore' in any class diagram."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

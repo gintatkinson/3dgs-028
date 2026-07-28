@@ -1,0 +1,37 @@
+# Copyright Gint Atkinson, gint.atkinson@gmail.com
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.tessl/
+scratch/
+
+# Credentials & local env configuration
+.env
+.env.local
+.env.*
+*define*.json
+config.json
+benchmark_results.jsonl
+
+# Node dependencies & build artifacts
+node_modules/
+package-lock.json
+dist/
+build/
+.dart_tool/
+.pub/
+.flutter-plugins*
+app_flutter_release.zip
+
+# Pipeline infrastructure (whitelisted by setup_git_hooks.py)
+!/skills/
+!/skills/**
+!/rules/
+!/rules/**
+!/.pipeline/
+!/.pipeline/**
+!/.agents/
+!/.agents/**
+!/scripts/
+!/scripts/**
